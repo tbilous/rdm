@@ -7,4 +7,5 @@ js/plugins.min.js
 addons
 .sass-cache
 node_modules
+/css
 .idea
