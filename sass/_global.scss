@@ -1,1 +1,35 @@
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&subset=cyrillic,latin);
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 5.3em;
+  @media screen and (max-width: $screen-sm-min) {
+    font-size: 10px;
+  }
+
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 5.3em;
+  background-color: #f5f5f5;
+}
+
+input, a, button, textarea, .btn {
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+.relative {
+  position: relative;
+}
