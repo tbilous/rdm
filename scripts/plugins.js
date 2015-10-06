@@ -1,7 +1,8 @@
 // Avoid `console` errors in browsers that lack a console.
-(function() {
+(function () {
     var method;
-    var noop = function () {};
+    var noop = function () {
+    };
     var methods = [
         'assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error',
         'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log',
@@ -18,7 +19,20 @@
         if (!console[method]) {
             console[method] = noop;
         }
-    } 
+    }
 }());
 
 // Place any jQuery/helper plugins in here.
+
+$(document).ready(function () {
+//BOOTSTRAP HOVER DROPDOWN-MENU
+    $('ul.nav li.dropdown').hover(function () {
+        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
+        $(this).addClass('active');
+    }, function () {
+        $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
+        $(this).removeClass('active');
+    });
+
+
+});

@@ -1,5 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Fira+Sans:400,500,700&subset=cyrillic,latin);
 
+//font-family: 'Fira Sans', sans-serif;
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -33,3 +34,41 @@ input, a, button, textarea, .btn {
 .relative {
   position: relative;
 }
+
+.list {
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+  li {
+    display: inline-block;
+  }
+}
+
+//TOP SOCIAL ICONS
+
+.top-social {
+  background-image: url('../img/icons/social-top.png');
+  background-repeat: no-repeat;
+  width: 33px;
+  height: 33px;
+  display: block;
+  &.sprite-fb {
+    background-position: -47px -5px;
+    &:hover {
+      background-position: -5px -5px;
+    }
+  }
+  &.sprite-in {
+    background-position: -47px -46px;
+    &:hover {
+      background-position: -5px -46px;
+    }
+  }
+  &.sprite-tw {
+    background-position: -89px -46px;
+    &:hover {
+      background-position: -89px -5px;
+    }
+  }
+}
+
