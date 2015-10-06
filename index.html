@@ -30,25 +30,27 @@
 
 <header class="header" id="home">
     <div class="header-bar">
-        <div class="container">
-            <div class="bar-wrapper">
+
+        <div class="bar-wrapper relative">
+            <div class="container">
                 <div class="row">
                     <div class="top-contacts">
                         <span class="top-address">м. Житомир, Київська, 3</span>
                         <span class="top-mail">+38 (0412)-46-83-02 | +38 (099) 1720505 | +38 (096) 0008585</span>
                         <span class="top-phone">razom.dm@gmail.com</span>
                     </div>
-                    <div class="top-social-group hidden-xs">
-                        <ul class="list">
-                            <li><a class="top-social sprite-fb" href="javascript:void(0)"></a>
-                            <li><a class="top-social sprite-tw" href="javascript:void(0)"></a>
-                            <li><a class="top-social sprite-in" href="javascript:void(0)"></a>
-                        </ul>
-                    </div>
+                </div>
+                <div class="top-social-group hidden-xs">
+                    <ul class="list">
+                        <li><a class="top-social sprite-fb" href="javascript:void(0)"></a>
+                        <li><a class="top-social sprite-tw" href="javascript:void(0)"></a>
+                        <li><a class="top-social sprite-in" href="javascript:void(0)"></a>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
+
     <nav class="navbar" role="navigation">
         <div class="container">
             <div class="navbar-header">
@@ -82,7 +84,57 @@
             <!--/.navbar-collapse -->
         </div>
     </nav>
+
 </header>
+<div class="jumbotron carousel-wrapper">
+    <!-- Carousel
+ ================================================== -->
+    <div id="homeCarousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators hidden-xs">
+            <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#homeCarousel" data-slide-to="1"></li>
+            <li data-target="#homeCarousel" data-slide-to="2"></li>
+            <li data-target="#homeCarousel" data-slide-to="3"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+            <div class="item active first-slide">
+                <div class="spacer"></div>
+                <div class="container">
+                    <div class="carousel-caption ">
+                        <h1 class="heading"><span class="light">БЛАГОДІЙНИЙ ФОНД</span> <span
+                                class="bold">"РАЗОМ ДО МАЙБУТНЬОГО"</span></h1>
+
+                        <h2 class="sub-heading"><span class="bold">Мета Фонду </span> – відродження духовних цінностей,
+                            вирішення
+                            соціальних проблем на основі стратегічного партнерства суспільства, держави та бізнесу.</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="item second-slide">
+                <div class="spacer"></div>
+            </div>
+            <div class="item third-slide">
+                <div class="spacer"></div>
+            </div>
+            <div class="item four-slide">
+                <div class="spacer"></div>
+            </div>
+        </div>
+        <!--        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>-->
+    </div>
+    <!-- /.carousel -->
+
+
+</div>
 
 <footer class="footer">
     <div class="container">
@@ -98,7 +150,11 @@
 
 <script src="js/plugins.min.js"></script>
 <script src="js/main.js"></script>
-
+<script>
+    $('.carousel').carousel({
+        interval: false
+    });
+</script>
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     (function (b, o, i, l, e, r) {

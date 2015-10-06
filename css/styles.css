@@ -264,8 +264,8 @@ td, th {
 
 @font-face {
     font-family: 'Glyphicons Halflings';
-    src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?1444040557);
-    src: url(/fonts/bootstrap/glyphicons-halflings-regular.eot?&1444040557#iefix) format("embedded-opentype"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff2?1444040557) format("woff2"), url(/fonts/bootstrap/glyphicons-halflings-regular.woff?1444040557) format("woff"), url(/fonts/bootstrap/glyphicons-halflings-regular.ttf?1444040557) format("truetype"), url(/fonts/bootstrap/glyphicons-halflings-regular.svg?1444040557#glyphicons_halflingsregular) format("svg")
+    src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot");
+    src: url("../fonts/bootstrap/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff2") format("woff2"), url("../fonts/bootstrap/glyphicons-halflings-regular.woff") format("woff"), url("../fonts/bootstrap/glyphicons-halflings-regular.ttf") format("truetype"), url("../fonts/bootstrap/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg")
 }
 
 .glyphicon {
@@ -1508,7 +1508,7 @@ p {
     line-height: 1.4
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .lead {
         font-size: 21px
     }
@@ -1701,7 +1701,7 @@ dd {
     clear: both
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .dl-horizontal dt {
         float: left;
         width: 160px;
@@ -1829,8 +1829,8 @@ pre code {
 .container {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 17.5px;
-    padding-right: 17.5px
+    padding-left: 15px;
+    padding-right: 15px
 }
 
 .container:before, .container:after {
@@ -1842,19 +1842,19 @@ pre code {
     clear: both
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .container {
-        width: 755px
+        width: 750px
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1092px) {
     .container {
-        width: 975px
+        width: 1070px
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1320px) {
     .container {
         width: 1280px
     }
@@ -1863,8 +1863,8 @@ pre code {
 .container-fluid {
     margin-right: auto;
     margin-left: auto;
-    padding-left: 17.5px;
-    padding-right: 17.5px
+    padding-left: 15px;
+    padding-right: 15px
 }
 
 .container-fluid:before, .container-fluid:after {
@@ -1877,8 +1877,8 @@ pre code {
 }
 
 .row {
-    margin-left: -17px;
-    margin-right: -18px
+    margin-left: -15px;
+    margin-right: -15px
 }
 
 .row:before, .row:after {
@@ -1893,8 +1893,8 @@ pre code {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
     position: relative;
     min-height: 1px;
-    padding-left: 18px;
-    padding-right: 17px
+    padding-left: 15px;
+    padding-right: 15px
 }
 
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
@@ -2105,7 +2105,7 @@ pre code {
     margin-left: 100%
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
         float: left
     }
@@ -2315,7 +2315,7 @@ pre code {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1092px) {
     .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
         float: left
     }
@@ -2525,7 +2525,7 @@ pre code {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1320px) {
     .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
         float: left
     }
@@ -2861,7 +2861,7 @@ table td[class*="col-"], table th[class*="col-"] {
     min-height: 0.01%
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 867px) {
     .table-responsive {
         width: 100%;
         margin-bottom: 15px;
@@ -3308,7 +3308,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
     color: #737373
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .form-inline .form-group {
         display: inline-block;
         margin-bottom: 0;
@@ -3375,8 +3375,8 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 }
 
 .form-horizontal .form-group {
-    margin-left: -17px;
-    margin-right: -18px
+    margin-left: -15px;
+    margin-right: -15px
 }
 
 .form-horizontal .form-group:before, .form-horizontal .form-group:after {
@@ -3388,7 +3388,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
     clear: both
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .form-horizontal .control-label {
         text-align: right;
         margin-bottom: 0;
@@ -3397,17 +3397,17 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
 }
 
 .form-horizontal .has-feedback .form-control-feedback {
-    right: 17px
+    right: 15px
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .form-horizontal .form-group-lg .control-label {
         padding-top: 14.33333px;
         font-size: 18px
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .form-horizontal .form-group-sm .control-label {
         padding-top: 6px;
         font-size: 12px
@@ -3971,7 +3971,7 @@ tbody.collapse.in {
     margin-bottom: 2px
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .navbar-right .dropdown-menu {
         left: auto
     }
@@ -4413,7 +4413,7 @@ tbody.collapse.in {
     left: auto
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .nav-justified > li, .nav-tabs.nav-justified > li {
         display: table-cell;
         width: 1%
@@ -4437,7 +4437,7 @@ tbody.collapse.in {
     border: 1px solid #ddd
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
         border-bottom: 1px solid #ddd;
         border-radius: 2px 2px 0 0
@@ -4478,7 +4478,7 @@ tbody.collapse.in {
     clear: both
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .navbar {
         border-radius: 2px
     }
@@ -4493,7 +4493,7 @@ tbody.collapse.in {
     clear: both
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .navbar-header {
         float: left
     }
@@ -4501,8 +4501,8 @@ tbody.collapse.in {
 
 .navbar-collapse {
     overflow-x: visible;
-    padding-right: 17px;
-    padding-left: 17px;
+    padding-right: 15px;
+    padding-left: 15px;
     border-top: 0 solid transparent;
     box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
     -webkit-overflow-scrolling: touch
@@ -4521,7 +4521,7 @@ tbody.collapse.in {
     overflow-y: auto
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .navbar-collapse {
         width: auto;
         border-top: 0;
@@ -4556,11 +4556,11 @@ tbody.collapse.in {
 }
 
 .container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
-    margin-right: -17px;
-    margin-left: -17px
+    margin-right: -15px;
+    margin-left: -15px
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
         margin-right: 0;
         margin-left: 0
@@ -4572,7 +4572,7 @@ tbody.collapse.in {
     border-width: 0 0 1px
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .navbar-static-top {
         border-radius: 0
     }
@@ -4585,7 +4585,7 @@ tbody.collapse.in {
     z-index: 1030
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .navbar-fixed-top, .navbar-fixed-bottom {
         border-radius: 0
     }
@@ -4604,7 +4604,7 @@ tbody.collapse.in {
 
 .navbar-brand {
     float: left;
-    padding: 30px 17px;
+    padding: 30px 15px;
     font-size: 18px;
     line-height: 20px;
     height: 80px
@@ -4618,16 +4618,16 @@ tbody.collapse.in {
     display: block
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-        margin-left: -17px
+        margin-left: -15px
     }
 }
 
 .navbar-toggle {
     position: relative;
     float: right;
-    margin-right: 17px;
+    margin-right: 15px;
     padding: 9px 10px;
     margin-top: 23px;
     margin-bottom: 23px;
@@ -4652,14 +4652,14 @@ tbody.collapse.in {
     margin-top: 4px
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .navbar-toggle {
         display: none
     }
 }
 
 .navbar-nav {
-    margin: 15px -17px
+    margin: 15px -15px
 }
 
 .navbar-nav > li > a {
@@ -4668,7 +4668,7 @@ tbody.collapse.in {
     line-height: 20px
 }
 
-@media (max-width: 767px) {
+@media (max-width: 867px) {
     .navbar-nav .open .dropdown-menu {
         position: static;
         float: none;
@@ -4692,7 +4692,7 @@ tbody.collapse.in {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .navbar-nav {
         float: left;
         margin: 0
@@ -4709,9 +4709,9 @@ tbody.collapse.in {
 }
 
 .navbar-form {
-    margin-left: -17px;
-    margin-right: -17px;
-    padding: 10px 17px;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 10px 15px;
     border-top: 1px solid transparent;
     border-bottom: 1px solid transparent;
     -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
@@ -4720,7 +4720,7 @@ tbody.collapse.in {
     margin-bottom: 23px
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .navbar-form .form-group {
         display: inline-block;
         margin-bottom: 0;
@@ -4776,7 +4776,7 @@ tbody.collapse.in {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 867px) {
     .navbar-form .form-group {
         margin-bottom: 5px
     }
@@ -4786,7 +4786,7 @@ tbody.collapse.in {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .navbar-form {
         width: auto;
         border: 0;
@@ -4833,22 +4833,22 @@ tbody.collapse.in {
     margin-bottom: 30px
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .navbar-text {
         float: left;
-        margin-left: 17px;
-        margin-right: 17px
+        margin-left: 15px;
+        margin-right: 15px
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .navbar-left {
         float: left !important
     }
 
     .navbar-right {
         float: right !important;
-        margin-right: -17px
+        margin-right: -15px
     }
 
     .navbar-right ~ .navbar-right {
@@ -4914,7 +4914,7 @@ tbody.collapse.in {
     color: #fff
 }
 
-@media (max-width: 767px) {
+@media (max-width: 867px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #000
     }
@@ -5013,7 +5013,7 @@ tbody.collapse.in {
     color: #fff
 }
 
-@media (max-width: 767px) {
+@media (max-width: 867px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
         border-color: #090909
     }
@@ -5377,7 +5377,7 @@ a.badge:hover, a.badge:focus {
     max-width: 100%
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 868px) {
     .jumbotron {
         padding-top: 48px;
         padding-bottom: 48px
@@ -6390,7 +6390,7 @@ button.close {
     overflow: scroll
 }
 
-@media (min-width: 768px) {
+@media (min-width: 868px) {
     .modal-dialog {
         width: 600px;
         margin: 30px auto
@@ -6406,7 +6406,7 @@ button.close {
     }
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1092px) {
     .modal-lg {
         width: 900px
     }
@@ -6904,7 +6904,7 @@ button.close {
     text-shadow: none
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 868px) {
     .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
         width: 30px;
         height: 30px;
@@ -7006,7 +7006,7 @@ button.close {
     display: none !important
 }
 
-@media (max-width: 767px) {
+@media (max-width: 867px) {
     .visible-xs {
         display: block !important
     }
@@ -7024,25 +7024,25 @@ button.close {
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 867px) {
     .visible-xs-block {
         display: block !important
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 867px) {
     .visible-xs-inline {
         display: inline !important
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 867px) {
     .visible-xs-inline-block {
         display: inline-block !important
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 868px) and (max-width: 1091px) {
     .visible-sm {
         display: block !important
     }
@@ -7060,25 +7060,25 @@ button.close {
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 868px) and (max-width: 1091px) {
     .visible-sm-block {
         display: block !important
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 868px) and (max-width: 1091px) {
     .visible-sm-inline {
         display: inline !important
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 868px) and (max-width: 1091px) {
     .visible-sm-inline-block {
         display: inline-block !important
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1092px) and (max-width: 1319px) {
     .visible-md {
         display: block !important
     }
@@ -7096,25 +7096,25 @@ button.close {
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1092px) and (max-width: 1319px) {
     .visible-md-block {
         display: block !important
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1092px) and (max-width: 1319px) {
     .visible-md-inline {
         display: inline !important
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1092px) and (max-width: 1319px) {
     .visible-md-inline-block {
         display: inline-block !important
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1320px) {
     .visible-lg {
         display: block !important
     }
@@ -7132,43 +7132,43 @@ button.close {
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1320px) {
     .visible-lg-block {
         display: block !important
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1320px) {
     .visible-lg-inline {
         display: inline !important
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1320px) {
     .visible-lg-inline-block {
         display: inline-block !important
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 867px) {
     .hidden-xs {
         display: none !important
     }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 868px) and (max-width: 1091px) {
     .hidden-sm {
         display: none !important
     }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 1092px) and (max-width: 1319px) {
     .hidden-md {
         display: none !important
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1320px) {
     .hidden-lg {
         display: none !important
     }
@@ -7241,7 +7241,7 @@ body {
     margin-bottom: 5.3em
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
     body {
         font-size: 10px
     }
@@ -7263,6 +7263,14 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
     position: relative
 }
 
+.light {
+    font-weight: 300 !important
+}
+
+.bold {
+    font-weight: 700 !important
+}
+
 .list {
     padding-left: 0;
     list-style: none;
@@ -7271,6 +7279,11 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
 
 .list li {
     display: inline-block
+}
+
+.spacer {
+    font-size: 0;
+    height: 0
 }
 
 .top-social {
@@ -7305,6 +7318,23 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
     background-position: -89px -5px
 }
 
+.header .navbar {
+    margin-bottom: 0
+}
+
+@media screen and (max-width: 1320px) {
+    .header .navbar {
+        font-size: 12px
+    }
+}
+
+@media screen and (min-width: 868px) {
+    .header .navbar-default {
+        width: 85%;
+        float: right
+    }
+}
+
 .header .icon-bar {
     background-color: #777
 }
@@ -7319,14 +7349,32 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
     font-weight: 700
 }
 
-.header .dropdown-menu li a {
-    padding-top: .8em;
-    padding-bottom: .5em
+@media screen and (min-width: 868px) {
+    .header .dropdown-menu {
+        min-width: 210px
+    }
 }
 
-@media screen and (max-width: 768px) {
-    .header .dropdown-menu li a {
-        font-size: .7em
+@media screen and (max-width: 868px) {
+    .header .dropdown-menu {
+        font-size: 12px
+    }
+}
+
+.header .dropdown-menu li a {
+    padding-top: .8em;
+    padding-bottom: .5em;
+    font-size: 1em
+}
+
+.header li:nth-last-child(1) a {
+    padding-right: 10px
+}
+
+@media screen and (max-width: 1092px) and (min-width: 868px) {
+    .header li a {
+        padding-left: 5px;
+        padding-right: 5px
     }
 }
 
@@ -7350,7 +7398,7 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
 
 .header .top-social-group {
     position: absolute;
-    right: 0;
+    right: 3em;
     top: .5em
 }
 
@@ -7382,7 +7430,7 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
     background: url("../img/icons/contact-top.png") no-repeat 0 -43px
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 868px) {
     .header .top-contacts span {
         margin-bottom: .3em
     }
@@ -7395,5 +7443,129 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
 
 .header .top-social-group li {
     padding: 0 2px 0 0
+}
+
+.carousel-wrapper {
+    background-color: white;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: -1px;
+    font-size: 16px
+}
+
+@media screen and (max-width: 1092px) {
+    .carousel-wrapper {
+        font-size: 10px
+    }
+}
+
+@media screen and (max-width: 868px) {
+    .carousel-wrapper {
+        font-size: 8px
+    }
+}
+
+.carousel-wrapper .carousel-caption {
+    font-family: 'Fira Sans', sans-serif;
+    color: black;
+    text-shadow: none;
+    width: 100%;
+    left: 6%;
+    right: 6%;
+    max-width: 88%;
+    top: 26%;
+    bottom: auto
+}
+
+.carousel-wrapper .heading {
+    margin-top: 0;
+    font-size: 3.2em
+}
+
+@media screen and (max-width: 1092px) {
+    .carousel-wrapper .heading {
+        font-size: 18px
+    }
+}
+
+.carousel-wrapper .sub-heading {
+    font-size: 1.3em;
+    display: inline-block;
+    max-width: 750px;
+    letter-spacing: -1px;
+    font-weight: 400
+}
+
+.carousel-wrapper .first-slide {
+    background: url("../img/slider/slide-1-hires.jpg") no-repeat center;
+    background-size: 100%
+}
+
+@media screen and (max-width: 1092px) {
+    .carousel-wrapper .first-slide {
+        background: url("../img/slider/slide-1-lowres.jpg") no-repeat center;
+        background-size: cover
+    }
+}
+
+.carousel-wrapper .second-slide {
+    background: url("../img/slider/slide-2-hires.jpg") no-repeat center;
+    background-size: 100%
+}
+
+@media screen and (max-width: 1092px) {
+    .carousel-wrapper .second-slide {
+        background: url("../img/slider/slide-2-lowres.jpg") no-repeat center;
+        background-size: cover
+    }
+}
+
+.carousel-wrapper .third-slide {
+    background: url("../img/slider/slide-3-hires.jpg") no-repeat center;
+    background-size: 100%
+}
+
+@media screen and (max-width: 1092px) {
+    .carousel-wrapper .third-slide {
+        background: url("../img/slider/slide-3-lowres.jpg") no-repeat center;
+        background-size: cover
+    }
+}
+
+.carousel-wrapper .four-slide {
+    background: url("../img/slider/slide-4-hires.jpg") no-repeat center;
+    background-size: 100%
+}
+
+@media screen and (max-width: 1092px) {
+    .carousel-wrapper .four-slide {
+        background: url("../img/slider/slide-4-lowres.jpg") no-repeat center;
+        background-size: cover
+    }
+}
+
+.carousel-wrapper .spacer {
+    padding-top: 35.94%
+}
+
+.carousel-fade .carousel-inner .item {
+    transition-property: opacity
+}
+
+.carousel-fade .carousel-inner .item, .carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+    opacity: 0
+}
+
+.carousel-fade .carousel-inner .active, .carousel-fade .carousel-inner .next.left, .carousel-fade .carousel-inner .prev.right {
+    opacity: 1
+}
+
+.carousel-fade .carousel-inner .next, .carousel-fade .carousel-inner .prev, .carousel-fade .carousel-inner .active.left, .carousel-fade .carousel-inner .active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0)
+}
+
+.carousel-fade .carousel-control {
+    z-index: 2
 }
 /*# sourceMappingURL=styles.css.map */

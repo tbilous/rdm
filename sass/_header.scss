@@ -1,6 +1,18 @@
 //HEADER
 .header {
   //navbar
+  .navbar {
+    margin-bottom: 0;
+    @media screen and (max-width: $screen-lg-min) {
+      font-size: 12px;
+    }
+  }
+  .navbar-default {
+    @media screen and (min-width: $screen-sm-min) {
+      width: 85%;
+      float: right;
+    }
+  }
   .icon-bar {
     background-color: $gray-light;
   }
@@ -12,11 +24,31 @@
   .navbar-nav li a, .dropdown-menu li a {
     font-weight: 700;
   }
+  .dropdown-menu {
+    @media screen and (min-width: $screen-sm-min) {
+      min-width: 210px;
+    }
+    @media screen and (max-width: $screen-sm-min) {
+      font-size: 12px;
+    }
+  }
   .dropdown-menu li a {
     padding-top: .8em;
     padding-bottom: .5em;
-    @media screen and (max-width: $screen-sm-min) {
-      font-size: .7em;
+    font-size: 1em;
+
+  }
+  li:nth-last-child(1) {
+    a {
+      padding-right: 10px
+    }
+  }
+  li {
+    a {
+      @media screen and (max-width: $screen-md-min) and (min-width: $screen-sm-min) {
+        padding-left: 5px;
+        padding-right: 5px;
+      }
     }
   }
   .navbar-brand {
@@ -37,7 +69,7 @@
   }
   .top-social-group {
     position: absolute;
-    right: 0;
+    right: 3em;
     top: .5em;
   }
   .top-contacts {

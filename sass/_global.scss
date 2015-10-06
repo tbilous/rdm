@@ -35,6 +35,16 @@ input, a, button, textarea, .btn {
   position: relative;
 }
 
+//FONT WEIGHT
+.light {
+  font-weight: 300 !important;
+}
+
+.bold {
+  font-weight: 700 !important;
+}
+
+//UL MENU
 .list {
   padding-left: 0;
   list-style: none;
@@ -44,8 +54,12 @@ input, a, button, textarea, .btn {
   }
 }
 
+// RESPONSIVE BLOCK SPACER
+.spacer {
+  font-size: 0;
+  height: 0;
+}
 //TOP SOCIAL ICONS
-
 .top-social {
   background-image: url('../img/icons/social-top.png');
   background-repeat: no-repeat;
