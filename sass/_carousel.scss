@@ -15,15 +15,15 @@
     color: black;
     text-shadow: none;
     width: 100%;
-    left: 6%;
-    right: 6%;
-    max-width: 88%;
+    left: 5%;
+    right: 5%;
+    max-width: 90%;
     top: 26%;
     bottom: auto;
   }
   .heading {
     margin-top: 0;
-    font-size: 3.2em;
+    font-size: 3.0em;
     @media screen and (max-width: $screen-md-min) {
       font-size: 18px;
     }

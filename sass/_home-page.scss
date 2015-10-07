@@ -1,0 +1,38 @@
+@import "nav-tabs";
+@import "content-wrapper";
+@import "article";
+
+.article {
+  padding-bottom: 5em;
+}
+
+//TAB_PANE CONTENT HOME PAGE
+.home-nav-tabs {
+}
+
+.home-nav {
+  .about-body {
+    ul {
+      padding-left: 10em;
+      list-style: none;
+    }
+    li {
+      min-height: 5em;
+      position: relative;
+      margin-bottom: 2em;
+      &:nth-last-child(1) {
+        margin-bottom: 0;
+      }
+      &:before {
+        content: "";
+        width: 3.7em;
+        height: 5em;
+        background: url("../img/icons/list-style-star.png") no-repeat center;
+        background-size: 100%;
+        position: absolute;
+        left: -8em;
+        top: -1em;
+      }
+    }
+  }
+}

@@ -1,0 +1,51 @@
+//SETTINGS NAV_TABS
+.my-nav-tabs {
+  li {
+    &:nth-child(1) {
+      a {
+        &.active,
+        &:focus,
+        &:active,
+        &:hover {
+          border-left: none;
+        }
+        border-left: none;
+      }
+    }
+    a {
+      padding: 1.5em 4em;
+      box-sizing: content-box;
+      margin-right: 0;
+      border-bottom: 1px;
+      background-color: #f3f3f3;
+      &:hover {
+        background-color: #ebebeb;
+      }
+    }
+    &.active {
+      border-bottom: none;
+      a {
+        font-weight: 700;
+        border-left: 1px;
+        background-color: #ebebeb;
+        &:hover,
+        &:focus,
+        &:active {
+          background-color: #ebebeb;
+          //border-left: none;
+        }
+      }
+    }
+  }
+}
+
+.tab-pane {
+  padding: 3em 3em 1em;
+  &.active {
+    background-color: #ebebeb;
+  }
+  ul {
+    padding-left: 10em;
+    list-style: none;
+  }
+}

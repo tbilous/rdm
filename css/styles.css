@@ -1341,7 +1341,7 @@ td, th {
 }
 
 html {
-    font-size: 10px;
+    font-size: 14px;
     -webkit-tap-highlight-color: transparent
 }
 
@@ -1349,7 +1349,7 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     line-height: 1.42857;
-    color: #333;
+    color: #464646;
     background-color: #fff
 }
 
@@ -1478,7 +1478,7 @@ h1, .h1 {
 }
 
 h2, .h2 {
-    font-size: 30px
+    font-size: 24px
 }
 
 h3, .h3 {
@@ -1508,7 +1508,7 @@ p {
     line-height: 1.4
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .lead {
         font-size: 21px
     }
@@ -1560,11 +1560,11 @@ mark, .mark {
 }
 
 .text-primary {
-    color: #337ab7
+    color: #029ec8
 }
 
 a.text-primary:hover, a.text-primary:focus {
-    color: #286090
+    color: #017696
 }
 
 .text-success {
@@ -1604,11 +1604,11 @@ a.text-danger:hover, a.text-danger:focus {
 }
 
 .bg-primary {
-    background-color: #337ab7
+    background-color: #029ec8
 }
 
 a.bg-primary:hover, a.bg-primary:focus {
-    background-color: #286090
+    background-color: #017696
 }
 
 .bg-success {
@@ -1701,7 +1701,7 @@ dd {
     clear: both
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .dl-horizontal dt {
         float: left;
         width: 160px;
@@ -1842,7 +1842,7 @@ pre code {
     clear: both
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .container {
         width: 750px
     }
@@ -2105,7 +2105,7 @@ pre code {
     margin-left: 100%
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
         float: left
     }
@@ -2861,7 +2861,7 @@ table td[class*="col-"], table th[class*="col-"] {
     min-height: 0.01%
 }
 
-@media screen and (max-width: 867px) {
+@media screen and (max-width: 767px) {
     .table-responsive {
         width: 100%;
         margin-bottom: 15px;
@@ -3305,10 +3305,10 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
     display: block;
     margin-top: 5px;
     margin-bottom: 10px;
-    color: #737373
+    color: #868686
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .form-inline .form-group {
         display: inline-block;
         margin-bottom: 0;
@@ -3388,7 +3388,7 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
     clear: both
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .form-horizontal .control-label {
         text-align: right;
         margin-bottom: 0;
@@ -3400,14 +3400,14 @@ textarea.input-lg, .input-group-lg > textarea.form-control, .input-group-lg > te
     right: 15px
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .form-horizontal .form-group-lg .control-label {
         padding-top: 14.33333px;
         font-size: 18px
     }
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .form-horizontal .form-group-sm .control-label {
         padding-top: 6px;
         font-size: 12px
@@ -3511,32 +3511,32 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #337ab7;
-    border-color: #2e6da4
+    background-color: #029ec8;
+    border-color: #028aaf
 }
 
 .btn-primary:focus, .btn-primary.focus {
     color: #fff;
-    background-color: #286090;
-    border-color: #122b40
+    background-color: #017696;
+    border-color: #002631
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #286090;
-    border-color: #204d74
+    background-color: #017696;
+    border-color: #015a72
 }
 
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #286090;
-    border-color: #204d74
+    background-color: #017696;
+    border-color: #015a72
 }
 
 .btn-primary:active:hover, .btn-primary:active:focus, .btn-primary:active.focus, .btn-primary.active:hover, .btn-primary.active:focus, .btn-primary.active.focus, .open > .btn-primary.dropdown-toggle:hover, .open > .btn-primary.dropdown-toggle:focus, .open > .btn-primary.dropdown-toggle.focus {
     color: #fff;
-    background-color: #204d74;
-    border-color: #122b40
+    background-color: #015a72;
+    border-color: #002631
 }
 
 .btn-primary:active, .btn-primary.active, .open > .btn-primary.dropdown-toggle {
@@ -3544,12 +3544,12 @@ a.btn.disabled, fieldset[disabled] a.btn {
 }
 
 .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled.focus, .btn-primary.disabled:active, .btn-primary.disabled.active, .btn-primary[disabled], .btn-primary[disabled]:hover, .btn-primary[disabled]:focus, .btn-primary[disabled].focus, .btn-primary[disabled]:active, .btn-primary[disabled].active, fieldset[disabled] .btn-primary, fieldset[disabled] .btn-primary:hover, fieldset[disabled] .btn-primary:focus, fieldset[disabled] .btn-primary.focus, fieldset[disabled] .btn-primary:active, fieldset[disabled] .btn-primary.active {
-    background-color: #337ab7;
-    border-color: #2e6da4
+    background-color: #029ec8;
+    border-color: #028aaf
 }
 
 .btn-primary .badge {
-    color: #337ab7;
+    color: #029ec8;
     background-color: #fff
 }
 
@@ -3902,7 +3902,7 @@ tbody.collapse.in {
     color: #fff;
     text-decoration: none;
     outline: 0;
-    background-color: #337ab7
+    background-color: #029ec8
 }
 
 .dropdown-menu > .disabled > a, .dropdown-menu > .disabled > a:hover, .dropdown-menu > .disabled > a:focus {
@@ -3971,7 +3971,7 @@ tbody.collapse.in {
     margin-bottom: 2px
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .navbar-right .dropdown-menu {
         left: auto
     }
@@ -4383,7 +4383,7 @@ tbody.collapse.in {
 
 .nav-pills > li.active > a, .nav-pills > li.active > a:hover, .nav-pills > li.active > a:focus {
     color: #fff;
-    background-color: #337ab7
+    background-color: #029ec8
 }
 
 .nav-stacked > li {
@@ -4413,7 +4413,7 @@ tbody.collapse.in {
     left: auto
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .nav-justified > li, .nav-tabs.nav-justified > li {
         display: table-cell;
         width: 1%
@@ -4437,7 +4437,7 @@ tbody.collapse.in {
     border: 1px solid #ddd
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .nav-tabs-justified > li > a, .nav-tabs.nav-justified > li > a {
         border-bottom: 1px solid #ddd;
         border-radius: 2px 2px 0 0
@@ -4478,7 +4478,7 @@ tbody.collapse.in {
     clear: both
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .navbar {
         border-radius: 2px
     }
@@ -4493,7 +4493,7 @@ tbody.collapse.in {
     clear: both
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .navbar-header {
         float: left
     }
@@ -4521,7 +4521,7 @@ tbody.collapse.in {
     overflow-y: auto
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .navbar-collapse {
         width: auto;
         border-top: 0;
@@ -4560,7 +4560,7 @@ tbody.collapse.in {
     margin-left: -15px
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .container > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-header, .container-fluid > .navbar-collapse {
         margin-right: 0;
         margin-left: 0
@@ -4572,7 +4572,7 @@ tbody.collapse.in {
     border-width: 0 0 1px
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .navbar-static-top {
         border-radius: 0
     }
@@ -4585,7 +4585,7 @@ tbody.collapse.in {
     z-index: 1030
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .navbar-fixed-top, .navbar-fixed-bottom {
         border-radius: 0
     }
@@ -4618,7 +4618,7 @@ tbody.collapse.in {
     display: block
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
         margin-left: -15px
     }
@@ -4652,7 +4652,7 @@ tbody.collapse.in {
     margin-top: 4px
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .navbar-toggle {
         display: none
     }
@@ -4668,7 +4668,7 @@ tbody.collapse.in {
     line-height: 20px
 }
 
-@media (max-width: 867px) {
+@media (max-width: 767px) {
     .navbar-nav .open .dropdown-menu {
         position: static;
         float: none;
@@ -4692,7 +4692,7 @@ tbody.collapse.in {
     }
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .navbar-nav {
         float: left;
         margin: 0
@@ -4720,7 +4720,7 @@ tbody.collapse.in {
     margin-bottom: 23px
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .navbar-form .form-group {
         display: inline-block;
         margin-bottom: 0;
@@ -4776,7 +4776,7 @@ tbody.collapse.in {
     }
 }
 
-@media (max-width: 867px) {
+@media (max-width: 767px) {
     .navbar-form .form-group {
         margin-bottom: 5px
     }
@@ -4786,7 +4786,7 @@ tbody.collapse.in {
     }
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .navbar-form {
         width: auto;
         border: 0;
@@ -4833,7 +4833,7 @@ tbody.collapse.in {
     margin-bottom: 30px
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .navbar-text {
         float: left;
         margin-left: 15px;
@@ -4841,7 +4841,7 @@ tbody.collapse.in {
     }
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .navbar-left {
         float: left !important
     }
@@ -4914,7 +4914,7 @@ tbody.collapse.in {
     color: #fff
 }
 
-@media (max-width: 867px) {
+@media (max-width: 767px) {
     .navbar-default .navbar-nav .open .dropdown-menu > li > a {
         color: #000
     }
@@ -5013,7 +5013,7 @@ tbody.collapse.in {
     color: #fff
 }
 
-@media (max-width: 867px) {
+@media (max-width: 767px) {
     .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
         border-color: #090909
     }
@@ -5128,8 +5128,8 @@ tbody.collapse.in {
 .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
     z-index: 2;
     color: #fff;
-    background-color: #337ab7;
-    border-color: #337ab7;
+    background-color: #029ec8;
+    border-color: #029ec8;
     cursor: default
 }
 
@@ -5256,11 +5256,11 @@ a.label:hover, a.label:focus {
 }
 
 .label-primary {
-    background-color: #337ab7
+    background-color: #029ec8
 }
 
 .label-primary[href]:hover, .label-primary[href]:focus {
-    background-color: #286090
+    background-color: #017696
 }
 
 .label-success {
@@ -5377,7 +5377,7 @@ a.badge:hover, a.badge:focus {
     max-width: 100%
 }
 
-@media screen and (min-width: 868px) {
+@media screen and (min-width: 768px) {
     .jumbotron {
         padding-top: 48px;
         padding-bottom: 48px
@@ -5416,7 +5416,7 @@ a.badge:hover, a.badge:focus {
 
 .thumbnail .caption {
     padding: 9px;
-    color: #333
+    color: #464646
 }
 
 a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
@@ -5550,7 +5550,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
     line-height: 20px;
     color: #fff;
     text-align: center;
-    background-color: #337ab7;
+    background-color: #029ec8;
     -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
     -webkit-transition: width 0.6s ease;
@@ -5728,8 +5728,8 @@ button.list-group-item {
 .list-group-item.active, .list-group-item.active:hover, .list-group-item.active:focus {
     z-index: 2;
     color: #fff;
-    background-color: #337ab7;
-    border-color: #337ab7
+    background-color: #029ec8;
+    border-color: #029ec8
 }
 
 .list-group-item.active .list-group-item-heading, .list-group-item.active .list-group-item-heading > small, .list-group-item.active .list-group-item-heading > .small, .list-group-item.active:hover .list-group-item-heading, .list-group-item.active:hover .list-group-item-heading > small, .list-group-item.active:hover .list-group-item-heading > .small, .list-group-item.active:focus .list-group-item-heading, .list-group-item.active:focus .list-group-item-heading > small, .list-group-item.active:focus .list-group-item-heading > .small {
@@ -5737,7 +5737,7 @@ button.list-group-item {
 }
 
 .list-group-item.active .list-group-item-text, .list-group-item.active:hover .list-group-item-text, .list-group-item.active:focus .list-group-item-text {
-    color: #c7ddef
+    color: #98e8fe
 }
 
 .list-group-item-success {
@@ -6063,26 +6063,26 @@ a.list-group-item-danger.active, a.list-group-item-danger.active:hover, a.list-g
 }
 
 .panel-primary {
-    border-color: #337ab7
+    border-color: #029ec8
 }
 
 .panel-primary > .panel-heading {
     color: #fff;
-    background-color: #337ab7;
-    border-color: #337ab7
+    background-color: #029ec8;
+    border-color: #029ec8
 }
 
 .panel-primary > .panel-heading + .panel-collapse > .panel-body {
-    border-top-color: #337ab7
+    border-top-color: #029ec8
 }
 
 .panel-primary > .panel-heading .badge {
-    color: #337ab7;
+    color: #029ec8;
     background-color: #fff
 }
 
 .panel-primary > .panel-footer + .panel-collapse > .panel-body {
-    border-bottom-color: #337ab7
+    border-bottom-color: #029ec8
 }
 
 .panel-success {
@@ -6390,7 +6390,7 @@ button.close {
     overflow: scroll
 }
 
-@media (min-width: 868px) {
+@media (min-width: 768px) {
     .modal-dialog {
         width: 600px;
         margin: 30px auto
@@ -6904,7 +6904,7 @@ button.close {
     text-shadow: none
 }
 
-@media screen and (min-width: 868px) {
+@media screen and (min-width: 768px) {
     .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next {
         width: 30px;
         height: 30px;
@@ -7006,7 +7006,7 @@ button.close {
     display: none !important
 }
 
-@media (max-width: 867px) {
+@media (max-width: 767px) {
     .visible-xs {
         display: block !important
     }
@@ -7024,25 +7024,25 @@ button.close {
     }
 }
 
-@media (max-width: 867px) {
+@media (max-width: 767px) {
     .visible-xs-block {
         display: block !important
     }
 }
 
-@media (max-width: 867px) {
+@media (max-width: 767px) {
     .visible-xs-inline {
         display: inline !important
     }
 }
 
-@media (max-width: 867px) {
+@media (max-width: 767px) {
     .visible-xs-inline-block {
         display: inline-block !important
     }
 }
 
-@media (min-width: 868px) and (max-width: 1091px) {
+@media (min-width: 768px) and (max-width: 1091px) {
     .visible-sm {
         display: block !important
     }
@@ -7060,19 +7060,19 @@ button.close {
     }
 }
 
-@media (min-width: 868px) and (max-width: 1091px) {
+@media (min-width: 768px) and (max-width: 1091px) {
     .visible-sm-block {
         display: block !important
     }
 }
 
-@media (min-width: 868px) and (max-width: 1091px) {
+@media (min-width: 768px) and (max-width: 1091px) {
     .visible-sm-inline {
         display: inline !important
     }
 }
 
-@media (min-width: 868px) and (max-width: 1091px) {
+@media (min-width: 768px) and (max-width: 1091px) {
     .visible-sm-inline-block {
         display: inline-block !important
     }
@@ -7150,13 +7150,13 @@ button.close {
     }
 }
 
-@media (max-width: 867px) {
+@media (max-width: 767px) {
     .hidden-xs {
         display: none !important
     }
 }
 
-@media (min-width: 868px) and (max-width: 1091px) {
+@media (min-width: 768px) and (max-width: 1091px) {
     .hidden-sm {
         display: none !important
     }
@@ -7241,7 +7241,7 @@ body {
     margin-bottom: 5.3em
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 768px) {
     body {
         font-size: 10px
     }
@@ -7264,11 +7264,15 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
 }
 
 .light {
-    font-weight: 300 !important
+    font-weight: 300
 }
 
 .bold {
-    font-weight: 700 !important
+    font-weight: 700
+}
+
+.blue-brand {
+    color: #448ccb
 }
 
 .list {
@@ -7318,6 +7322,12 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
     background-position: -89px -5px
 }
 
+.under-line-icon:after {
+    content: url("../img/icons/heading-icon.png");
+    display: block;
+    margin-top: 4px
+}
+
 .header .navbar {
     margin-bottom: 0
 }
@@ -7328,7 +7338,7 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
     }
 }
 
-@media screen and (min-width: 868px) {
+@media screen and (min-width: 768px) {
     .header .navbar-default {
         width: 85%;
         float: right
@@ -7349,13 +7359,13 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
     font-weight: 700
 }
 
-@media screen and (min-width: 868px) {
+@media screen and (min-width: 768px) {
     .header .dropdown-menu {
         min-width: 210px
     }
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 768px) {
     .header .dropdown-menu {
         font-size: 12px
     }
@@ -7371,7 +7381,7 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
     padding-right: 10px
 }
 
-@media screen and (max-width: 1092px) and (min-width: 868px) {
+@media screen and (max-width: 1092px) and (min-width: 768px) {
     .header li a {
         padding-left: 5px;
         padding-right: 5px
@@ -7398,7 +7408,7 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
 
 .header .top-social-group {
     position: absolute;
-    right: 3em;
+    right: 5%;
     top: .5em
 }
 
@@ -7430,7 +7440,7 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
     background: url("../img/icons/contact-top.png") no-repeat 0 -43px
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 768px) {
     .header .top-contacts span {
         margin-bottom: .3em
     }
@@ -7459,7 +7469,7 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
     }
 }
 
-@media screen and (max-width: 868px) {
+@media screen and (max-width: 768px) {
     .carousel-wrapper {
         font-size: 8px
     }
@@ -7470,16 +7480,16 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
     color: black;
     text-shadow: none;
     width: 100%;
-    left: 6%;
-    right: 6%;
-    max-width: 88%;
+    left: 5%;
+    right: 5%;
+    max-width: 90%;
     top: 26%;
     bottom: auto
 }
 
 .carousel-wrapper .heading {
     margin-top: 0;
-    font-size: 3.2em
+    font-size: 3.0em
 }
 
 @media screen and (max-width: 1092px) {
@@ -7567,5 +7577,93 @@ input:focus, input:active, a:focus, a:active, button:focus, button:active, texta
 
 .carousel-fade .carousel-control {
     z-index: 2
+}
+
+.my-nav-tabs li:nth-child(1) a {
+    border-left: none
+}
+
+.my-nav-tabs li:nth-child(1) a.active, .my-nav-tabs li:nth-child(1) a:focus, .my-nav-tabs li:nth-child(1) a:active, .my-nav-tabs li:nth-child(1) a:hover {
+    border-left: none
+}
+
+.my-nav-tabs li a {
+    padding: 1.5em 4em;
+    box-sizing: content-box;
+    margin-right: 0;
+    border-bottom: 1px;
+    background-color: #f3f3f3
+}
+
+.my-nav-tabs li a:hover {
+    background-color: #ebebeb
+}
+
+.my-nav-tabs li.active {
+    border-bottom: none
+}
+
+.my-nav-tabs li.active a {
+    font-weight: 700;
+    border-left: 1px;
+    background-color: #ebebeb
+}
+
+.my-nav-tabs li.active a:hover, .my-nav-tabs li.active a:focus, .my-nav-tabs li.active a:active {
+    background-color: #ebebeb
+}
+
+.tab-pane {
+    padding: 3em 3em 1em
+}
+
+.tab-pane.active {
+    background-color: #ebebeb
+}
+
+.tab-pane ul {
+    padding-left: 10em;
+    list-style: none
+}
+
+.content-wrapper {
+    padding-top: 3em
+}
+
+.article .article-heading {
+    text-align: center;
+    position: relative;
+    font-weight: 700;
+    margin-bottom: 1em
+}
+
+.article {
+    padding-bottom: 5em
+}
+
+.home-nav .about-body ul {
+    padding-left: 10em;
+    list-style: none
+}
+
+.home-nav .about-body li {
+    min-height: 5em;
+    position: relative;
+    margin-bottom: 2em
+}
+
+.home-nav .about-body li:nth-last-child(1) {
+    margin-bottom: 0
+}
+
+.home-nav .about-body li:before {
+    content: "";
+    width: 3.7em;
+    height: 5em;
+    background: url("../img/icons/list-style-star.png") no-repeat center;
+    background-size: 100%;
+    position: absolute;
+    left: -8em;
+    top: -1em
 }
 /*# sourceMappingURL=styles.css.map */

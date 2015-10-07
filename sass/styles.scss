@@ -1,8 +1,15 @@
 //@import "bootstrap-sprockets";
 //@import "bootstrap-compass";
+//SYSTEM
 @import "compass";
 @import "bootstrap";
+//GLOBAL CSS
 @import "global";
+//MODUL'S
 @import "header";
 @import "carousel";
-
+//@import "nav-tabs";
+//@import "content-wrapper";
+//@import "article";
+//PAGES
+@import "home-page";

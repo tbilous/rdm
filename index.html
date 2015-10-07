@@ -86,6 +86,7 @@
     </nav>
 
 </header>
+<!--CAROUSEL-->
 <div class="jumbotron carousel-wrapper">
     <!-- Carousel
  ================================================== -->
@@ -136,6 +137,94 @@
 
 </div>
 
+
+<!--MAIN  SECTION-->
+<div class="content-wrapper">
+    <div class="container">
+        <div class="row">
+            <!--LEFT MENU-->
+            <div class="col-xs-2 hidden-xs">
+                <aside class="left-menu" id="left-menu"></aside>
+            </div>
+            <!--CONTENT BLOCK-->
+            <div class="col-sm-8">
+                <main>
+                    <article class="article">
+                        <h2 class="article-heading under-line-icon">Про нас</h2>
+                    <span class="article-body">
+                    <strong class="blue-brand">Благодійний фонд «Разом до майбутнього»</strong> був створений у лютому 2012 року. Мета Фонду – відродження духовних цінностей, вирішення соціальних проблем на основі стратегічного партнерства суспільства, держави та бізнесу. Місія Фонду – досягати результату кожною дією та проектом, підтримка обдарованих і інтелектуальних людей, тих, хто здатний змінюватися і готовий допомагати іншим, сформувати суспільне середовище, де цінностями є творчість, професіоналізм і активність.
+                    </span>
+
+                        <div class="home-nav">
+                            <!--NAV-TABS-->
+                            <ul class="nav nav-tabs my-nav-tabs home-nav-tabs" id="myTab">
+                                <li class="active"><a href="#first">Принципи</a>
+                                <li><a href="#second">Цінності</a>
+                            </ul>
+
+                            <div class="tab-content about-body">
+                                <div class="tab-pane active" id="first">
+                                    <ul>
+                                        <li><strong>Відкритість</strong> - працюємо для кожного і з кожним у середовищі
+                                            комунікації
+                                            толерантності та об’єктивного інформування.
+                                        </li>
+                                        <li>
+                                            <strong>Ефективність</strong> – використовуємо новітні технології
+                                            міжнародного
+                                            та українського
+                                            досвіду благодійної діяльності: кожна справа з метою, кожна дія з
+                                            результатом.
+                                        </li>
+                                        <li>
+                                            <strong>Публічність</strong> – діємо за відкритими правилами, створюємо
+                                            однакові
+                                            умови для всіх
+                                            учасників проектів і програм Фонду.
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tab-pane" id="second">
+                                    <ul>
+                                        <li><strong>Духовність.</strong> Кожна душа вимірюється розміром свого
+                                            стремління.
+                                            Ми
+                                            прагнемо до відродження краси, сили духу та гармонії українського
+                                            суспільства.
+                                            Це цілком можливо, якщо кожен з нас пам’ятатиме, що Людина є Світ і її
+                                            почуття -
+                                            його буття.
+                                        </li>
+                                        <li>
+                                            <strong>Розвиток.</strong> Почни з себе, і світ зміниться довкола! Пріоритет
+                                            самовдосконалення врятує суспільство від таких хвороб як лінь, егоїзм та
+                                            байдужість. Ми постійно розвиваємося для того, аби мобільно та оперативно
+                                            реагувати на проблеми, які вирішуємо.
+                                        </li>
+                                        <li>
+                                            <strong>Довіра.</strong> Ми приймаємо відкритих людей та віддаємо свою
+                                            відкритість. Наша команда вірить і довіряє, адже глибока віра сама по собі
+                                            велика сила. Об’єднавшись і довіряючи ми непереможні.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                    </article>
+                    <article class="article">
+                        <h2 class="article-heading under-line-icon">Наші проекти</h2>
+                    </article>
+                </main>
+            </div>
+            <!--RIGHT MENU-->
+            <div class="col-xs-2 hidden-xs">
+                <aside class="right-menu" id="right-menu"></aside>
+            </div>
+        </div>
+    </div>
+</div>
+
 <footer class="footer">
     <div class="container">
         <p>&copy; Company 2015</p>
@@ -154,7 +243,12 @@
     $('.carousel').carousel({
         interval: false
     });
+    $('.home-nav-tabs a').click(function (e) {
+        e.preventDefault();
+        $(this).tab('show');
+    })
 </script>
+
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>
     (function (b, o, i, l, e, r) {

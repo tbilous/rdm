@@ -37,11 +37,15 @@ input, a, button, textarea, .btn {
 
 //FONT WEIGHT
 .light {
-  font-weight: 300 !important;
+  font-weight: 300;
 }
 
 .bold {
-  font-weight: 700 !important;
+  font-weight: 700;
+}
+
+.blue-brand {
+  color: #448ccb;
 }
 
 //UL MENU
@@ -86,3 +90,11 @@ input, a, button, textarea, .btn {
   }
 }
 
+//UNDERLINE HEADING
+.under-line-icon {
+  &:after {
+    content: url("../img/icons/heading-icon.png");
+    display: block;
+    margin-top: 4px;
+  }
+}
