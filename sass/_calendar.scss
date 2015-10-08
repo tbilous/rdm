@@ -1,0 +1,227 @@
+//colors
+$white: #ffffff;
+//$alabaster: #fafafa;
+$calendar-table-bg: #415b6f;
+$month-area-bg: #029ec8;
+$color_alto_approx: #dddddd;
+$color_egg_white_approx: #fff0c3;
+$color_steel_blue_approx: #53b3cd;
+$color_california_approx: #ff9b08;
+$color_mountain_mist_approx: #999999;
+
+//@extend-elements
+//original selectors
+//div.zabuto_calendar .badge-today, div.zabuto_calendar div.legend span.badge-today
+%extend_1 {
+  background-color: $color_steel_blue_approx;
+  color: $white;
+  //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  text-shadow: none;
+}
+
+//original selectors
+//div.zabuto_calendar .badge-event, div.zabuto_calendar div.legend span.badge-event
+%extend_2 {
+  background-color: $color_california_approx;
+  color: $white;
+  //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+  text-shadow: none;
+}
+
+@media(max-width: 979px) {
+  div.zabuto_calendar .table {
+    th {
+      padding: 2px 1px;
+    }
+    td {
+      padding: 2px 1px;
+    }
+  }
+}
+
+div.zabuto_calendar {
+  margin: 0;
+  padding: 0;
+  .table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    th {
+      padding: 4px 2px;
+      text-align: center;
+    }
+    td {
+      //padding: 4px 2px;
+      text-align: center;
+    }
+    tr {
+      th {
+        //background-color: $white;
+        background-color: $calendar-table-bg;
+      }
+      td {
+        //background-color: $white;
+        background-color: $calendar-table-bg;
+        &.dow-clickable {
+          cursor: pointer;
+        }
+        &.event-clickable {
+          cursor: pointer;
+        }
+        div.day {
+          margin: 0;
+          height: 3em;
+          line-height: 3em;
+        }
+        &.event div.day {
+          background-color: $color_egg_white_approx;
+        }
+      }
+      &:last-child {
+        //border-bottom: 1px solid $color_alto_approx;
+      }
+      &.calendar-month-header th {
+        background-color: $button-blue;
+        padding-top: 12px;
+        padding-bottom: 4px;
+        &:nth-child(1),
+        &:nth-last-child(1) {
+          background-color: $month-area-bg;
+        }
+        span {
+          cursor: pointer;
+          display: inline-block;
+          padding-bottom: 10px;
+        }
+      }
+      &.calendar-dow-header th {
+        font-weight: normal !important;
+      }
+    }
+  }
+  div {
+    &.calendar-month-navigation {
+      cursor: pointer;
+      margin: 0;
+      padding: 0;
+      padding-top: 5px;
+    }
+    &.legend {
+      margin-top: 5px;
+      text-align: right;
+      span {
+        color: $color_mountain_mist_approx;
+        font-size: 10px;
+        font-weight: normal;
+        &.badge-today {
+          @extend %extend_1;
+        }
+        &.badge-event {
+          @extend %extend_2;
+        }
+        &.legend-spacer {
+          padding-left: 25px;
+          &:after {
+            content: ' ';
+          }
+        }
+        &.badge {
+          font-size: 1em;
+          width: 3em !important;
+          height: 3em !important;
+        }
+        &.legend-text:after {
+          content: ' ';
+        }
+        &.legend-block:after {
+          content: ' ';
+        }
+        &.legend-list:after {
+          content: ' ';
+        }
+      }
+    }
+  }
+  tr {
+    &.calendar-dow-header th {
+      width: 14%;
+    }
+    &.calendar-dow td {
+      width: 14%;
+    }
+  }
+  .calendar-dow td:nth-last-child(1) {
+    color: red;
+  }
+  .badge-today {
+    @extend %extend_1;
+  }
+  .badge-event {
+    @extend %extend_2;
+    font-size: 0.95em;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 4px;
+  }
+  .table-bordered tr.calendar-month-header th {
+    border-left: 0;
+    border-right: 0;
+    &:first-child {
+      //border-left: 1px solid $color_alto_approx;
+    }
+  }
+  ul.legend {
+    display: inline-block;
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+    li {
+      display: inline-block;
+      height: 11px;
+      width: 11px;
+      margin-left: 5px;
+      &.event {
+        background-color: $color_egg_white_approx;
+      }
+      &:last-child {
+        margin-right: 5px;
+      }
+    }
+    > span {
+      padding-left: 2px;
+    }
+    div.zabuto_calendar ul.legend li:first-child {
+      margin-left: 7px;
+    }
+  }
+}
+
+//MY
+div.zabuto_calendar {
+  .calendar-month-header {
+    text-transform: uppercase;
+    color: white;
+    .th:nth-last-child(1), .th:nth-child(1) {
+      background-color: $button-blue;
+    }
+
+  }
+  td {
+    border: none !important;
+  }
+  .badge {
+    font-size: 1.4em;
+    width: 3em;
+    height: 3em;
+    border-radius: 100%;
+    line-height: 3em;
+    padding: 0;
+  }
+  .calendar-dow {
+    font-size: 1.4em;
+    color: #7b8a97;
+    td {
+      padding: 0;
+    }
+  }
+}

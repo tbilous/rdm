@@ -31,6 +31,15 @@ input, a, button, textarea, .btn {
   }
 }
 
+input, textarea, button, .btn, .form-control {
+  &:focus,
+  &:active {
+    outline: none;
+    border: none;
+    box-shadow: none;
+  }
+}
+
 .relative {
   position: relative;
 }
@@ -46,6 +55,16 @@ input, a, button, textarea, .btn {
 
 .blue-brand {
   color: #448ccb;
+}
+
+$button-blue: #53b3cd;
+$button-blue-hover: darken($button-blue, 5%);
+
+.button-brand-blue {
+  background-color: $button-blue;
+  &:hover {
+    background-color: $button-blue-hover;
+  }
 }
 
 //UL MENU

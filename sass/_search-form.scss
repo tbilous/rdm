@@ -1,0 +1,23 @@
+.search-form-group {
+  input {
+    border: none;
+    background-color: rgba(255, 255, 255, .6);
+  }
+  .search-button, .search-input {
+    height: 2.86em;
+    padding-top: 0;
+    padding-bottom: 0;
+    line-height: 2.86em;
+  }
+  .search-button {
+    color: white;
+    width: 4.1em;
+    background-image: url("../img/icons/search-icon.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    .glyphicon-search {
+      font-size: 1.5em;
+      vertical-align: sub;
+    }
+  }
+}

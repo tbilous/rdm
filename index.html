@@ -280,9 +280,26 @@
     <div class="footer-body">
         <div class="container">
             <div class="row">
-                <div class="col-xs-4"></div>
-                <div class="col-xs-4"></div>
-                <div class="col-xs-4"></div>
+                <div class="col-xs-4">
+                    <div class="search-footer">
+                        <div class="input-group search-form-group">
+                            <input type="text" class="form-control search-input" placeholder="Search for...">
+                            <span class="input-group-btn">
+                            <button class="btn btn-secondary search-button button-brand-blue" type="button"></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="calendar-footer">
+                        <div id="my-calendar"></div>
+                    </div>
+                </div>
+                <div class="col-xs-4">
+                    <div class="contacts-footer">
+
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -301,6 +318,7 @@
 
 <script src="js/plugins.min.js"></script>
 <script src="js/main.js"></script>
+<script src="js/zabuto_calendar.min.js"></script>
 <script>
     $('.carousel').carousel({
         interval: false
@@ -309,6 +327,16 @@
         e.preventDefault();
         $(this).tab('show');
     })
+
+</script>
+<script type="application/javascript">
+    $(document).ready(function () {
+        $("#my-calendar").zabuto_calendar({
+            language: "ua",
+            cell_border: false,
+            today: true,
+        });
+    });
 </script>
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
