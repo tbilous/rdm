@@ -5,12 +5,9 @@
 .article {
   padding-bottom: 5em;
 }
-
 //TAB_PANE CONTENT HOME PAGE
-.home-nav-tabs {
-}
-
 .home-nav {
+  margin-top: 4em;
   .about-body {
     ul {
       padding-left: 10em;
@@ -34,5 +31,92 @@
         top: -1em;
       }
     }
+  }
+}
+
+.project-block{
+  text-align: justify;
+  font-size: 0.1px;
+  padding: 0;
+  list-style-type: none;
+}
+.project-item{
+  font-size: $font-size-base;
+  width: 33%;
+  vertical-align: top;
+  margin-bottom: 2.5%;
+}
+//JUSTIFY
+.project-block:after{
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+.project-block .placeholder{
+  padding: 0;
+}
+
+/* -- FLUID GRID STYLES -- */
+/* 2 COL */
+@media (max-width: 800px){
+  .project-item{
+    width: 48%;
+    margin-bottom: 4%;
+  }
+}
+/* SINGLE COL */
+@media (max-width: 600px){
+  .project-item{
+    width: 100%;
+    margin-bottom: 5%;
+  }
+}
+.project{
+  -webkit-box-shadow: 0 0 0 1px $gray-lighter;
+  -moz-box-shadow: 0 0 0 1px $gray-lighter;
+  box-shadow: 0 0 0 1px $gray-lighter;
+  .spacer{
+    padding-top: 66.5%;
+  }
+}
+.project1{
+  background: url("../img/projects/project-1-hires.jpg") center;
+  background-size: cover;
+  @media screen and (max-width: $screen-sm-min){
+    background: url("../img/projects/project-1-lowres.jpg") center;
+    background-size: cover;
+  }
+}
+.project2{
+  background: url("../img/projects/project-2-hires.jpg") center;
+  background-size: cover;
+  @media screen and (max-width: $screen-sm-min){
+    background: url("../img/projects/project-2-lowres.jpg") center;
+    background-size: cover;
+  }
+}
+.project3{
+  background: url("../img/projects/project-3-hires.jpg") center;
+  background-size: cover;
+  @media screen and (max-width: $screen-sm-min){
+    background: url("../img/projects/project-3-lowres.jpg") center;
+    background-size: cover;
+  }
+}
+.project-heading{
+  font-size: 1.4em;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: .3em;
+}
+.detail{
+  color: $gray-light;
+  font-size: .9em;
+  text-align: center;
+  a:hover{
+    text-decoration: none;
+  }
+  .glyphicon{
+    font-size: 70%;
   }
 }

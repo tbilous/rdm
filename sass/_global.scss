@@ -9,19 +9,19 @@ html {
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 5.3em;
+  margin-bottom: 33em;
   @media screen and (max-width: $screen-sm-min) {
     font-size: 10px;
   }
 
 }
+//STICKY FOOTER
 .footer {
   position: absolute;
   bottom: 0;
   width: 100%;
   /* Set the fixed height of the footer here */
-  height: 5.3em;
-  background-color: #f5f5f5;
+  height: 33em;
 }
 
 input, a, button, textarea, .btn {
