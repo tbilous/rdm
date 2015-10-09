@@ -276,6 +276,7 @@ $.fn.zabuto_calendar = function (options) {
                         var dayId = dateId + '_day';
 
                         //var $dayElement = $('<div id="' + dayId + '" class="day" >' + currDayOfMonth + '</div>');
+//EDITED tbilous@yahoo.com
                         var $dayElement = $('<a href"#" id="' + dayId + '" class="day" >' + currDayOfMonth + '</a>');
                         $dayElement.data('day', currDayOfMonth);
 
@@ -647,7 +648,7 @@ $.fn.zabuto_calendar_language = function (lang) {
                 dow_labels: ["Пн", "Вт", "Ср", "Чт", "Пт", "Сб", "Вск"]
             };
             break;
-
+//EDITED tbilous@yahoo.coms
         case 'ua':
             return {
                 month_labels: ["Січень", "Лютий", "Березень", "Квітень", "Травень", "Червень", "Липень", "Серпень", "Вересень", "Жовтень", "Листопад", "Грудень"],

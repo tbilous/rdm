@@ -10,8 +10,14 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 33em;
-  @media screen and (max-width: $screen-sm-min) {
+  @media screen and (max-width: $screen-desktop) {
+    font-size: 12px;
+  }
+  @media screen and (max-width: $screen-tablet) {
     font-size: 10px;
+  }
+  @media screen and (max-width: $screen-phone) {
+    font-size: 9px;
   }
 
 }
@@ -105,6 +111,43 @@ $button-blue-hover: darken($button-blue, 5%);
     background-position: -89px -46px;
     &:hover {
       background-position: -89px -5px;
+    }
+  }
+}
+//BOTTOM SOCIAL ICONS
+.bottom-social {
+  position: relative;
+  &::before{
+    content: "";
+    background-image: url("../img/icons/contact-bottom.png");
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    top: 0;
+  }
+  &.icon-address{
+    &::before{
+      background-position: 0 0;
+    }
+  }
+  &.icon-fax{
+    &::before{
+      background-position: 0 -26px;
+    }
+  }
+  &.icon-mail{
+    &::before{
+      background-position: 0 -48px;
+    }
+  }
+  &.icon-phone{
+   &::before{
+     background-position: 0 -73px;
+   }
+  }
+  &.icon-site{
+    &::before{
+      background-position: 0 -26px;
     }
   }
 }

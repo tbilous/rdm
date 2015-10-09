@@ -32,22 +32,19 @@
     <div class="header-bar">
 
         <div class="bar-wrapper relative">
-            <div class="container">
-                <div class="row">
-                    <div class="top-contacts">
-                        <span class="top-address">м. Житомир, Київська, 3</span>
-                        <span class="top-mail">+38 (0412)-46-83-02 | +38 (099) 1720505 | +38 (096) 0008585</span>
-                        <span class="top-phone">razom.dm@gmail.com</span>
-                    </div>
+                <div class="top-contacts">
+                    <span class="top-address">м. Житомир, Київська, 3</span>
+                    <span class="top-mail">+38 (0412)-46-83-02 | +38 (099) 1720505 | +38 (096) 0008585</span>
+                    <span class="top-phone">razom.dm@gmail.com</span>
                 </div>
-                <div class="top-social-group hidden-xs">
-                    <ul class="list">
-                        <li><a class="top-social sprite-fb" href="javascript:void(0)"></a>
-                        <li><a class="top-social sprite-tw" href="javascript:void(0)"></a>
-                        <li><a class="top-social sprite-in" href="javascript:void(0)"></a>
-                    </ul>
-                </div>
+            <div class="top-social-group hidden-xs">
+                <ul class="list">
+                    <li><a class="top-social sprite-fb" href="javascript:void(0)"></a>
+                    <li><a class="top-social sprite-tw" href="javascript:void(0)"></a>
+                    <li><a class="top-social sprite-in" href="javascript:void(0)"></a>
+                </ul>
             </div>
+
         </div>
     </div>
 
@@ -280,7 +277,7 @@
     <div class="footer-body">
         <div class="container">
             <div class="row">
-                <div class="col-xs-4">
+                <div class="col-sm-4">
                     <div class="search-footer">
                         <div class="input-group search-form-group">
                             <input type="text" class="form-control search-input" placeholder="Search for...">
@@ -290,24 +287,33 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-xs-4">
+                <div class="col-sm-4">
                     <div class="calendar-footer">
-                        <div id="my-calendar"></div>
+                        <div id="my-calendar">
+                        </div>
                     </div>
                 </div>
-                <div class="col-xs-4">
-                    <div class="contacts-footer">
-
+                <div class="col-sm-4">
+                    <div class="contacts-footer" style="margin-top: 3em">
+                        <ul class="list-unstyled bottom-contacts">
+                            <li class="bottom-social icon-address">м. Житомир, вул. Київська, 3</li>
+                            <li class="bottom-social icon-phone">
+                                <div>+38 (0412)-46-83-02</div>
+                                <div>+380991720505</div>
+                            </li>
+                            <li class="bottom-social icon-fax">+380960008585</li>
+                            <li class="bottom-social icon-mail">razom.dm@gmail.com</li>
+                            <li class="bottom-social icon-site">dm.in.ua</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="bottom-bar">
-        <div class="container">
-            <p>&copy; Company 2015</p>
+        <div class="bottom-bar">
+            <div class="container">
+                <p>&copy; Company 2015</p>
+            </div>
         </div>
-    </div>
 </footer>
 
 
@@ -330,14 +336,26 @@
 
 </script>
 <script type="application/javascript">
+    var eventData = [
+        {"date": "2015-10-01", "badge": false, "title": "Example 1"},
+        {"date": "2015-10-02", "badge": true, "title": "Example 2"}
+    ];
     $(document).ready(function () {
         $("#my-calendar").zabuto_calendar({
             language: "ua",
             cell_border: false,
             today: true,
+            weekstartson: 1,
+            show_days: true,
+            nav_icon: {
+                prev: '<span class="glyphicon glyphicon-menu-left"></span>',
+                next: '<span class="glyphicon glyphicon-menu-right"></span>'
+            },
+            data: eventData
         });
     });
 </script>
+
 
 <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
 <script>

@@ -71,8 +71,14 @@
     position: absolute;
     right: 5%;
     top: .5em;
+    @media screen  and (max-width: $screen-md-min)  and (orientation:portrait)  {
+      top: 0;
+    }
   }
   .top-contacts {
+    @media screen and (max-width: $screen-md-min) {
+      text-align: left;
+    }
     span {
       display: inline-block;
       padding: 0 1.5em;

@@ -1,18 +1,34 @@
-.footer-body{
+.footer-body {
   background: url("../img/footer-bg-hires.jpg") center bottom no-repeat;
-  @media screen and (max-width: $screen-sm-min){
+  @media screen and (max-width: $screen-sm-min) {
     background: url("../img/footer-bg-lowres.jpg") center bottom no-repeat;
     background-size: cover;
   }
-  //margin-bottom: 100px;
   height: 27.8em;
-  //position: relative;
-}
-.bottom-bar{
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background-color: #171b24;
-  color: white;
-  height: 5.2em;
+
+  .bottom-bar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #171b24;
+    color: white;
+    height: 5.2em;
+  }
+  .contacts-footer {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .bottom-contacts {
+    padding-left: 3em;
+  }
+  .bottom-social{
+    font-weight: 500;
+    padding: 0 0 1.3em;
+    color: #151515;
+    font-size: 1.1em;
+    &::before{
+      left: -2em;
+      top: .1em;
+    }
+  }
 }

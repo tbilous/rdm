@@ -2,10 +2,10 @@
 $white: #ffffff;
 //$alabaster: #fafafa;
 $holiday-color: #ff7979;
-$calendar-table-bg: #415b6f;
 $week-days-color: #46b7c7;
+$calendar-table-bg: #415b6f;
+$calendar-table-color: #7b8a97;
 $month-area-bg: #029ec8;
-$color_alto_approx: #dddddd;
 $color_egg_white_approx: #fff0c3;
 $color_steel_blue_approx: #53b3cd;
 $color_california_approx: #ff9b08;
@@ -14,10 +14,10 @@ $color_mountain_mist_approx: #999999;
 //@extend-elements
 //original selectors
 //div.zabuto_calendar .badge-today, div.zabuto_calendar div.legend span.badge-today
+
 %extend_1 {
   background-color: $color_steel_blue_approx;
   color: $white;
-  //Instead of the line below you could use @include text-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
   text-shadow: none;
 }
 
@@ -30,15 +30,12 @@ $color_mountain_mist_approx: #999999;
   text-shadow: none;
 }
 
-@media(max-width: 979px) {
-  div.zabuto_calendar .table {
-    th {
-      padding: 2px 1px;
-    }
-    td {
-      padding: 2px 1px;
-    }
-  }
+@media (max-width: $screen-tablet) {
+ .calendar-footer{
+   width: 90%;
+   margin: 0 auto;
+   padding-top: .5em;
+ }
 }
 
 div.zabuto_calendar {
@@ -68,14 +65,9 @@ div.zabuto_calendar {
           cursor: pointer;
         }
         a.day {
-          //padding: 20% 0;
           cursor: pointer;
           height: 2.5em;
           margin: 0;
-/*          display: flex;
-          align-items: center;
-          justify-content: center;*/
-          //font-weight: 700;
           display: -webkit-box;
           display: -webkit-flex;
           display: -ms-flexbox;
@@ -91,19 +83,19 @@ div.zabuto_calendar {
           -webkit-justify-content: center;
           -ms-flex-pack: center;
           justify-content: center;
-
+          @media (max-width: $container-md) {
+                height: 2em;
+          }
         }
         &.event div.day {
           background-color: $color_egg_white_approx;
         }
       }
-      &:last-child {
-        //border-bottom: 1px solid $color_alto_approx;
-      }
       &.calendar-month-header th {
         background-color: $button-blue;
-        padding-top: 12px;
-        padding-bottom: 4px;
+        padding-top: .8em;
+        padding-bottom: .2em;
+        font-size: 1em;
         &:nth-child(1),
         &:nth-last-child(1) {
           background-color: $month-area-bg;
@@ -136,9 +128,6 @@ div.zabuto_calendar {
       margin-top: 5px;
       text-align: right;
       span {
-        color: $color_mountain_mist_approx;
-        font-size: 10px;
-        font-weight: normal;
         &.badge-today {
           @extend %extend_1;
         }
@@ -173,9 +162,6 @@ div.zabuto_calendar {
     &.calendar-dow td {
       width: 14%;
     }
-  }
-  .calendar-dow td:nth-last-child(1) {
-    //color: red;
   }
   .badge-today {
     @extend %extend_1;
@@ -245,10 +231,6 @@ div.zabuto_calendar {
     padding: 0;
     width: 1.5em;
     height: 1.5em;
-/*    display: flex;
-    align-items: center;
-    align-content: stretch;
-    justify-content: center;*/
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -267,7 +249,7 @@ div.zabuto_calendar {
   }
   .calendar-dow {
     font-size: 1.4em;
-    color: #7b8a97;
+    color: $calendar-table-color;
     td {
       padding: 0;
     }
