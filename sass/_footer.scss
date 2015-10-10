@@ -14,6 +14,13 @@
     color: white;
     height: 5.2em;
   }
+  .calendar-footer, .search-footer, .contacts-footer{
+    max-width: 270px;
+    margin: 0 auto;
+    @media screen and (max-width: $container-desktop) {
+      padding-top: 1em;
+    }
+  }
   .contacts-footer {
     max-width: 90%;
     margin: 0 auto;
@@ -29,6 +36,41 @@
     &::before{
       left: -2em;
       top: .1em;
+    }
+  }
+  .heading{
+    margin-left: 1em;
+    position: relative;
+    font-weight: 700;
+    font-size: 1.2em;
+    padding-left: 4em;
+    margin-bottom: 2.5em;
+    &::before{
+      content: '';
+      position: absolute;
+      width: 54px;
+      height: 54px;
+      top: -.8em;
+      left: -1em;
+      border-radius: 100%;
+    }
+    &.search-heading{
+      &::before{
+        background: $calendar-table-bg url("../img/icons/search-icon.png") center no-repeat;
+      }
+    }
+    &.contact-heading{
+      &::before{
+        background: $calendar-table-bg url("../img/icons/mail-icon.png") center no-repeat;
+      }
+    }
+    &.calendar-heading{
+      &::before{
+        background: $calendar-table-bg url("../img/icons/calendar-icon.png") center no-repeat;
+      }
+    }
+    @media screen and (max-width: $container-desktop) {
+      display: none;
     }
   }
 }

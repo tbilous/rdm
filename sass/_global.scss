@@ -3,6 +3,22 @@
 //font-family: 'Fira Sans', sans-serif;
 /* Sticky footer styles
 -------------------------------------------------- */
+
+$button-blue: #53b3cd;
+$button-blue-hover: darken($button-blue, 5%);
+
+$white: #ffffff;
+$holiday-color: #ff7979;
+$week-days-color: #46b7c7;
+$calendar-table-bg: #415b6f;
+$calendar-table-color: #7b8a97;
+$month-area-bg: #029ec8;
+$color_egg_white_approx: #fff0c3;
+$color_steel_blue_approx: #53b3cd;
+$color_california_approx: #ff9b08;
+$color_mountain_mist_approx: #999999;
+
+
 html {
   position: relative;
   min-height: 100%;
@@ -62,9 +78,6 @@ input, textarea, button, .btn, .form-control {
 .blue-brand {
   color: #448ccb;
 }
-
-$button-blue: #53b3cd;
-$button-blue-hover: darken($button-blue, 5%);
 
 .button-brand-blue {
   background-color: $button-blue;

@@ -1,15 +1,5 @@
 //colors
-$white: #ffffff;
-//$alabaster: #fafafa;
-$holiday-color: #ff7979;
-$week-days-color: #46b7c7;
-$calendar-table-bg: #415b6f;
-$calendar-table-color: #7b8a97;
-$month-area-bg: #029ec8;
-$color_egg_white_approx: #fff0c3;
-$color_steel_blue_approx: #53b3cd;
-$color_california_approx: #ff9b08;
-$color_mountain_mist_approx: #999999;
+
 
 //@extend-elements
 //original selectors
@@ -39,12 +29,15 @@ $color_mountain_mist_approx: #999999;
 }
 
 div.zabuto_calendar {
-  margin: 0;
   padding: 0;
   .table {
-    width: 100%;
+    font-size: $font-size-base;
     margin: 0;
+    width: 100%;
     padding: 0;
+    @media (max-width: $screen-tablet) {
+      font-size: 10px;
+    }
     th {
       padding: 4px 2px;
       text-align: center;
@@ -66,7 +59,7 @@ div.zabuto_calendar {
         }
         a.day {
           cursor: pointer;
-          height: 2.5em;
+          height: 2em;
           margin: 0;
           display: -webkit-box;
           display: -webkit-flex;
@@ -95,7 +88,7 @@ div.zabuto_calendar {
         background-color: $button-blue;
         padding-top: .8em;
         padding-bottom: .2em;
-        font-size: 1em;
+        font-size: .9em;
         &:nth-child(1),
         &:nth-last-child(1) {
           background-color: $month-area-bg;
@@ -109,8 +102,10 @@ div.zabuto_calendar {
       &.calendar-dow-header th {
         font-weight: normal !important;
         border: none;
-        font-size: 1.4em;
+        font-size: 1.3em;
         color: $week-days-color;
+        padding-top: 10px;
+        padding-bottom: 5px;
         &:nth-last-child(1){
           color: $holiday-color;
         }
@@ -164,7 +159,7 @@ div.zabuto_calendar {
     }
   }
   .badge-today {
-    @extend %extend_1;
+        @extend %extend_1;
   }
   .badge-event {
     @extend %extend_2;
@@ -246,15 +241,24 @@ div.zabuto_calendar {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
+    &.badge-today{
+      padding-right: 2px;
+    }
   }
   .calendar-dow {
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: $calendar-table-color;
     td {
       padding: 0;
     }
   }
+  .calendar-dow:nth-last-child(1){
+    td{
+      padding-bottom: 8px;
+    }
+  }
+  td a{
+    display: block;
+  }
 }
-td a{
-  display: block;
-}
+
