@@ -1,27 +1,21 @@
 .right-aside, .left-aside {
   padding-top: 4em;
 }
-
 .aside-heading {
   margin-bottom: 1em;
   text-align: center;
 }
-
 [class^="block-"] {
+  margin-bottom: 2em;
+  &:nth-last-of-type(1) {
+    margin-bottom: 0;
+  }
   &:nth-of-type(1) {
     .aside-heading {
       color: black;
     }
   }
 }
-
-[class^="block-"] {
-  margin-bottom: 2em;
-  &:nth-last-of-type(1) {
-    margin-bottom: 0;
-  }
-}
-
 .block-btn-group {
   li {
     margin-bottom: .5em;
