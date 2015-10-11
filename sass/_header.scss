@@ -27,11 +27,13 @@
   .dropdown-menu {
     @media screen and (min-width: $screen-sm-min) {
       min-width: 210px;
+      margin-top: -1px !important;
     }
     @media screen and (max-width: $screen-sm-min) {
       font-size: 12px;
     }
   }
+
   .dropdown-menu li a {
     padding-top: .8em;
     padding-bottom: .5em;
@@ -74,10 +76,17 @@
     @media screen  and (max-width: $screen-md-min)  and (orientation:portrait)  {
       top: 0;
     }
+    @media screen and (max-width: $screen-md-min) {
+      right: 5px;
+    }
+    @media screen and (max-width: 810px) {
+      display: none;
+    }
   }
   .top-contacts {
     @media screen and (max-width: $screen-md-min) {
       text-align: left;
+      margin-left: 1em;
     }
     span {
       display: inline-block;

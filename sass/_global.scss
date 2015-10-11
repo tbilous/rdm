@@ -62,6 +62,9 @@ input, textarea, button, .btn, .form-control {
   }
 }
 
+.color-black {
+  color: black;
+}
 .relative {
   position: relative;
 }
@@ -172,4 +175,11 @@ input, textarea, button, .btn, .form-control {
     display: block;
     margin-top: 4px;
   }
+}
+
+//BTN
+.btn-lg {
+  font-size: 1em;
+  width: 100%;
+  max-width: 240px;
 }

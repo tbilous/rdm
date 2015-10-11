@@ -5,15 +5,6 @@
     background-size: cover;
   }
   height: 27.8em;
-
-  .bottom-bar {
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-color: #171b24;
-    color: white;
-    height: 5.2em;
-  }
   .calendar-footer, .search-footer, .contacts-footer{
     max-width: 270px;
     margin: 0 auto;
@@ -71,6 +62,32 @@
     }
     @media screen and (max-width: $container-desktop) {
       display: none;
+    }
+  }
+
+  .bottom-bar {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-color: #171b24;
+    height: 5.2em;
+    color: #cdd1dd;
+    @media screen and (min-width: $screen-phone) {
+      padding-top: 1em;
+    }
+    p {
+      margin-top: 1em;
+    }
+    ul {
+      margin-top: .5em;
+    }
+  }
+  .button-up {
+    padding: 0;
+    line-height: .6;
+    .glyphicon {
+      font-size: 2em;
+      line-height: .7;
     }
   }
 }
