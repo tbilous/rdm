@@ -5,7 +5,7 @@
     background-size: cover;
   }
   height: 27.8em;
-  .calendar-footer, .search-footer, .contacts-footer{
+  .calendar-footer, .search-footer, .contacts-footer {
     max-width: 270px;
     margin: 0 auto;
     @media screen and (max-width: $container-desktop) {
@@ -19,24 +19,24 @@
   .bottom-contacts {
     padding-left: 3em;
   }
-  .bottom-social{
+  .bottom-social {
     font-weight: 500;
     padding: 0 0 1.3em;
     color: #151515;
     font-size: 1.1em;
-    &::before{
+    &::before {
       left: -2em;
       top: .1em;
     }
   }
-  .heading{
+  .heading {
     margin-left: 1em;
     position: relative;
     font-weight: 700;
     font-size: 1.2em;
     padding-left: 4em;
     margin-bottom: 2.5em;
-    &::before{
+    &::before {
       content: '';
       position: absolute;
       width: 54px;
@@ -45,18 +45,18 @@
       left: -1em;
       border-radius: 100%;
     }
-    &.search-heading{
-      &::before{
+    &.search-heading {
+      &::before {
         background: $calendar-table-bg url("../img/icons/search-icon.png") center no-repeat;
       }
     }
-    &.contact-heading{
-      &::before{
+    &.contact-heading {
+      &::before {
         background: $calendar-table-bg url("../img/icons/mail-icon.png") center no-repeat;
       }
     }
-    &.calendar-heading{
-      &::before{
+    &.calendar-heading {
+      &::before {
         background: $calendar-table-bg url("../img/icons/calendar-icon.png") center no-repeat;
       }
     }

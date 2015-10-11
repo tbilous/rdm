@@ -12,17 +12,17 @@ $holiday-color: #ff7979;
 $week-days-color: #46b7c7;
 $calendar-table-bg: #415b6f;
 $calendar-table-color: #7b8a97;
-$month-area-bg: #029ec8;
+$month-area-bg: $brand-primary; //#029ec8
 $color_egg_white_approx: #fff0c3;
 $color_steel_blue_approx: #53b3cd;
 $color_california_approx: #ff9b08;
 $color_mountain_mist_approx: #999999;
 
-
 html {
   position: relative;
   min-height: 100%;
 }
+
 body {
   /* Margin bottom by footer height */
   margin-bottom: 33em;
@@ -37,6 +37,7 @@ body {
   }
 
 }
+
 //STICKY FOOTER
 .footer {
   position: absolute;
@@ -65,6 +66,7 @@ input, textarea, button, .btn, .form-control {
 .color-black {
   color: black;
 }
+
 .relative {
   position: relative;
 }
@@ -104,6 +106,7 @@ input, textarea, button, .btn, .form-control {
   font-size: 0;
   height: 0;
 }
+
 //TOP SOCIAL ICONS
 .top-social {
   background-image: url('../img/icons/social-top.png');
@@ -130,10 +133,11 @@ input, textarea, button, .btn, .form-control {
     }
   }
 }
+
 //BOTTOM SOCIAL ICONS
 .bottom-social {
   position: relative;
-  &::before{
+  &::before {
     content: "";
     background-image: url("../img/icons/contact-bottom.png");
     width: 16px;
@@ -141,31 +145,31 @@ input, textarea, button, .btn, .form-control {
     position: absolute;
     top: 0;
   }
-  &.blue::before{
+  &.blue::before {
     background-image: url("../img/icons/contact-blue.png");
   }
-  &.icon-address{
-    &::before{
+  &.icon-address {
+    &::before {
       background-position: 0 0;
     }
   }
-  &.icon-fax{
-    &::before{
+  &.icon-fax {
+    &::before {
       background-position: 0 -26px;
     }
   }
-  &.icon-mail{
-    &::before{
+  &.icon-mail {
+    &::before {
       background-position: 0 -48px;
     }
   }
-  &.icon-phone{
-   &::before{
-     background-position: 0 -73px;
-   }
+  &.icon-phone {
+    &::before {
+      background-position: 0 -73px;
+    }
   }
-  &.icon-site{
-    &::before{
+  &.icon-site {
+    &::before {
       background-position: 0 -26px;
     }
   }

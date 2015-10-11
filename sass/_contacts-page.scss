@@ -1,11 +1,11 @@
-.contacts-wrapper{
-  article{
+.contacts-wrapper {
+  article {
     padding-bottom: 3em;
   }
-  .map{
+  .map {
     position: relative;
     padding-top: 32%;
-    iframe{
+    iframe {
       position: absolute;
       top: 0;
       left: 0;
@@ -17,12 +17,12 @@
   .bottom-contacts {
     padding-left: 3em;
   }
-  .bottom-social{
+  .bottom-social {
     font-weight: 500;
     padding: 0 0 1.3em;
     color: #151515;
     font-size: 1.1em;
-    &::before{
+    &::before {
       left: -2em;
       top: .1em;
     }

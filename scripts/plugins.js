@@ -48,4 +48,5 @@ $(document).ready(function () {
             $('.map iframe').css("pointer-events", "auto");
         });
     }
+
 });

@@ -5,12 +5,10 @@
 @import "bootstrap";
 //GLOBAL CSS
 @import "global";
-
 //SECTIONS
 @import "header";
 @import "footer";
 @import "aside";
-
 //MODUL'S
 @import "carousel";
 @import "calendar";
@@ -19,7 +17,7 @@
 @import "article";
 @import "search-form";
 @import "page-heading";
-
 //PAGES
 @import "home-page";
 @import "contacts-page";
+@import "about";

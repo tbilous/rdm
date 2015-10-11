@@ -1,0 +1,25 @@
+.about-wrapper{
+  .article-body{
+    margin-bottom: 6em;
+  }
+  .property{
+    padding-left: 10em ;
+    position: relative;
+    margin-bottom: 4em;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 5.86em;
+      height: 5.86em;
+      background: $brand-primary url("../img/icons/list-style-white-star.png") center no-repeat;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+    }
+    li{
+      margin-bottom: .5em;
+    }
+  }
+}

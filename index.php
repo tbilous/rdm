@@ -6,7 +6,7 @@
 <!--[if IE 8]>
 <html class="no-js lt-ie9" lang="ru"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js" lang="ru"> <!--<![endif]-->
+<html class="no-js" lang="ru-RU"> <!--<![endif]-->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -28,61 +28,7 @@
 <![endif]-->
 
 
-<header class="header" id="home">
-    <div class="header-bar">
-
-        <div class="bar-wrapper relative">
-            <div class="top-contacts">
-                <span class="top-address">м. Житомир, Київська, 3</span>
-                <span class="top-mail">+38 (0412)-46-83-02 | +38 (099) 1720505 | +38 (096) 0008585</span>
-                <span class="top-phone">razom.dm@gmail.com</span>
-            </div>
-            <div class="top-social-group">
-                <ul class="list">
-                    <li><a class="top-social sprite-fb" href="javascript:void(0)"></a>
-                    <li><a class="top-social sprite-tw" href="javascript:void(0)"></a>
-                    <li><a class="top-social sprite-in" href="javascript:void(0)"></a>
-                </ul>
-            </div>
-
-        </div>
-    </div>
-
-    <nav class="navbar" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
-                        aria-expanded="false" aria-controls="navbar">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <span class="navbar-brand"></span>
-            </div>
-            <div id="navbar" class="navbar-collapse collapse navbar-default">
-                <ul class="nav navbar-nav navbar-right ">
-                    <li class=""><a class="" href="about.html"><span>Про фонд</span></a></li>
-                    <li><a class="" href="javascript:void(0)"><span>Команда</span></a></li>
-                    <li><a class="" href="javascript:void(0)"><span>Дитина країни</span></a></li>
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
-                           aria-expanded="false"><span>Здорова нація</span></a>
-                        <ul class="dropdown-menu">
-                            <li><a href="javascript:void(0)">Кольорова доля</a></li>
-                            <li><a href="javascript:void(0)">Студенти дітям</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="" href="javascript:void(0)"><span>Розумне покоління</span></a></li>
-                    <li><a class="" href="javascript:void(0)"><span>Екосвіт</span></a></li>
-                    <li><a class="" href="contacts.html"><span>Контакти</span></a></li>
-                </ul>
-            </div>
-            <!--/.navbar-collapse -->
-        </div>
-    </nav>
-
-</header>
+<?php include 'header.php' ?>
 <!--CAROUSEL-->
 <div class="jumbotron carousel-wrapper">
     <!-- Carousel
@@ -141,18 +87,7 @@
             <!--LEFT ASIDE-->
             <div class="col-lg-2 visible-lg">
                 <aside class="left-aside" id="left-menu">
-                    <div class="block-1">
-                        <h4 class="aside-heading">Відео</h4>
-
-                        <div class="embed-responsive embed-responsive-16by9">
-                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
-                        </div>
-                    </div>
-                    <div class="block-2">
-                        <div class="embed-responsive embed-responsive-4by3">
-                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
-                        </div>
-                    </div>
+                    <?php include 'aside-left.php' ?>
                 </aside>
             </div>
             <!--CONTENT BLOCK-->
@@ -280,58 +215,7 @@
             <!--RIGHT ASIDE-->
             <div class="col-sm-4 col-md-3 col-lg-2  hidden-xs">
                 <aside class="right-aside" id="right-menu">
-                    <div class="block-1">
-                        <h4 class="aside-heading">Наші проекти</h4>
-                        <ul class="list-unstyled block-btn-group">
-                            <li>
-                                <a href="javascript:void(0)" class="btn btn-lg btn-primary">
-                                    Фото
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="btn btn-lg btn-primary">
-                                    Відео
-                                </a>
-                            </li>
-                        </ul>
-
-
-                    </div>
-                    <div class="block-2">
-                        <h4 class="aside-heading">Інфо-медіа</h4>
-                        <ul class="list-unstyled block-btn-group">
-                            <li>
-                                <a href="javascript:void(0)" class="btn btn-lg btn-primary">
-                                    Новини
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)" class="btn btn-lg btn-primary">
-                                    Ми і ЗМІ
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="block-3">
-                        <h4 class="aside-heading">Цитати</h4>
-
-                        <p class="aside-article">
-                            "Не відкладайте добрих справ!<br/>
-                            Нелегка доля випала Україні у XXI столітті. Вир суспільно-політичного життя захопив і
-                            поглинув кожного. Ми, живучи у світі технологій маніпуляцій та амбіцій, забуваємо про
-                            головне – живемо один раз. <br/>
-                            Інколи важко зробити крок вперед, не маючи проблем з опорно-руховим апаратом, почути музику,
-                            маючи абсолютний слух, відчути тепло, маючи родину.<br/>
-                            А як бути тим, хто не має таких звичних на перший погляд можливостей?<br/>
-                            Єдине, що лишається у особливих людей – ВІРА.<br/>
-                            Не будьмо байдужими. Одна добра справа для тебе – дрібничка, а для когось – мрія, цілий
-                            світ…<br/>
-                            Зробімо перший крок РАЗОМ! Разом до МАЙБУТНЬОГО!"<br/>
-                            <br/>
-                            <strong>Максим Шкіль, 2012 рік</strong>
-
-                        </p>
-                    </div>
+                    <?php include 'aside-right.php' ?>
                 </aside>
             </div>
         </div>
@@ -339,71 +223,7 @@
 </div>
 
 <!--FOOTER-->
-<footer class="footer">
-    <div class="footer-body">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-4">
-                    <div class="search-footer">
-                        <div class="heading search-heading ">Пошук</div>
-                        <div class="input-group search-form-group">
-                            <input type="text" class="form-control search-input" placeholder="Пошук...">
-                            <span class="input-group-btn">
-                            <button class="btn btn-secondary search-button button-brand-blue" type="button"></button>
-                            </span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="calendar-footer">
-                        <div class="heading calendar-heading ">Календар</div>
-                        <div id="my-calendar">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="contacts-footer visible-lg visible-md visible-sm">
-                        <div class="heading contact-heading ">Контакти</div>
-                        <ul class="list-unstyled bottom-contacts">
-                            <li class="bottom-social icon-address">м. Житомир, вул. Київська, 3</li>
-                            <li class="bottom-social icon-phone">
-                                <div>+38 (0412)-46-83-02</div>
-                                <div>+380991720505</div>
-                            </li>
-                            <li class="bottom-social icon-fax">+380960008585</li>
-                            <li class="bottom-social icon-mail">razom.dm@gmail.com</li>
-                            <li class="bottom-social icon-site">dm.in.ua</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="bottom-bar">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-4 hidden-xs">
-                        <p>Copyright &copy; 2015 - All Rights Reserved</p>
-                    </div>
-                    <div class="col-xs-12 col-sm-4 text-center">
-                        <a href="#home" class="button-up btn">
-                            <span class="glyphicon glyphicon-menu-up"></span>
-
-                            <div>Вверх</div>
-                        </a>
-                    </div>
-                    <div class="col-sm-4 hidden-xs">
-                        <ul class="list text-right">
-                            <li><a class="top-social sprite-fb" href="javascript:void(0)"></a>
-                            <li><a class="top-social sprite-tw" href="javascript:void(0)"></a>
-                            <li><a class="top-social sprite-in" href="javascript:void(0)"></a>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer>
-
+<?php include 'footer.php' ?>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
@@ -413,6 +233,7 @@
 <script src="js/plugins.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/zabuto_calendar.min.js"></script>
+
 <script>
     $('.carousel').carousel({
         interval: false
@@ -450,9 +271,9 @@
     (function (b, o, i, l, e, r) {
         b.GoogleAnalyticsObject = l;
         b[l] || (b[l] =
-                function () {
-                    (b[l].q = b[l].q || []).push(arguments)
-                });
+            function () {
+                (b[l].q = b[l].q || []).push(arguments)
+            });
         b[l].l = +new Date;
         e = o.createElement(i);
         r = o.getElementsByTagName(i)[0];
