@@ -33,6 +33,19 @@ $(document).ready(function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
         $(this).removeClass('active');
     });
+//DEFEND IFRAME FROM MOUSE WILL
+    $(function () {
+        $('.map').hover(function () {
+                stopScroll();
+            },
+            function () {
+                $('.map iframe').css("pointer-events", "none");
+            });
+    });
 
-
+    function stopScroll() {
+        $('.map').click(function () {
+            $('.map iframe').css("pointer-events", "auto");
+        });
+    }
 });

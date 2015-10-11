@@ -141,6 +141,9 @@ input, textarea, button, .btn, .form-control {
     position: absolute;
     top: 0;
   }
+  &.blue::before{
+    background-image: url("../img/icons/contact-blue.png");
+  }
   &.icon-address{
     &::before{
       background-position: 0 0;

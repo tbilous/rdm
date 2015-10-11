@@ -1,0 +1,9 @@
+.page-heading{
+  background: url("../img/page-head-ribbon-bg.jpg") no-repeat;
+  background-size: cover;
+  padding: .5em 0 1.2em;
+  color: white;
+  @media screen and (max-width: $screen-sm-min){
+    padding-left: 15px;
+  }
+}
