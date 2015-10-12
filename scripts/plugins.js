@@ -48,5 +48,33 @@ $(document).ready(function () {
             $('.map iframe').css("pointer-events", "auto");
         });
     }
+    function master() {
+        var masterHeight = $('.nav-video-wrapper').height();
+        $(window).on('resize', function(){
+            var masterHeight = $('.nav-video-wrapper').height();
+            $('.slave').css('height', masterHeight+'px');
+        });
+        $('.slave').css('height', masterHeight+'px');
+    }
+    master();
+    window.onresize = master();
+
+//VIDEO
+    function thumbsBg() {
+        $(".video-start").each(function () {
+            var videoID = $(this).data('video');
+            $(this).css('backgroundImage', 'url(http://img.youtube.com/vi/' + videoID + '/0.jpg)')
+        });
+    }
+    window.onload = thumbsBg;
+
+    $('.video-start').click(function(){
+        var videoID = $(this).data('video');
+        $(".video-content-wrapper iframe.slave").remove();
+        $('<iframe  class="slave" allowfullscreen></iframe>')
+            .attr("src", "http://www.youtube.com/embed/" + videoID + '?rel=0&amp;hd=1;autoplay=1')
+            .appendTo(".video-content-wrapper");
+        master();
+    });
 
 });

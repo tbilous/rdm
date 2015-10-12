@@ -10,10 +10,32 @@
     margin-bottom: .5em;
     float: none;
     position: relative;
-    background-size: 100%;
-    background-color: red;
     max-width: 185px;
-    left: 15%;
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    &:nth-last-of-type(1){
+      margin-bottom: 0;
+    }
+  }
+  .video-content-wrapper{
+    width: 79%;
+    margin-left: 2%;
+    vertical-align: top;
+    iframe{
+      width: 100%;
+      border: 0;
+    }
+  }
+
+  .nav-video-wrapper{
+    width: 18%;
+  }
+  .nav-video{
+    li{
+      display: block;
+    }
   }
 
   @media only screen and(max-width: $screen-md-min) {
