@@ -1,0 +1,22 @@
+//BLOCK-4
+.video-wrapper {
+  /*  @media only screen and(max-width: $screen-md-min) {
+      .col-xs-3 {
+        padding-left: 0;
+      }
+    }*/
+
+  .video-start {
+    margin-bottom: .5em;
+    float: none;
+    position: relative;
+    background-size: 100%;
+    background-color: red;
+    max-width: 185px;
+    left: 15%;
+  }
+
+  @media only screen and(max-width: $screen-md-min) {
+    font-size: 9px;
+  }
+}
