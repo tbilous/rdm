@@ -4,6 +4,15 @@
   margin: 0;
   top: 1em;
   background-color: transparent;
+  small{
+    font-size: 80%;
+  }
+  .home{
+    color: #c2c2c2;
+  }
+  li::before{
+    display: none;
+  }
 }
 
 .photo-page {
