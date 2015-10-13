@@ -52,6 +52,10 @@ $(document).ready(function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeOut(200);
         $(this).removeClass('active');
     });
+//ACTIVATE PARENT DROPDOWN HREF
+    $('.navbar .dropdown > a').click(function(){
+        location.href = this.href;
+    });
 //DEFEND IFRAME FROM MOUSE WILL
     $(function () {
         $('.map').hover(function () {
@@ -67,6 +71,7 @@ $(document).ready(function () {
             $('.map iframe').css("pointer-events", "auto");
         });
     }
+    //SET MASTER HEIGHT FOR SLAVE
     function master() {
         var masterHeight = $('.nav-video-wrapper').height();
         $(window).on('resize', function(){

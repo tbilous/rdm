@@ -1,0 +1,43 @@
+.team-wrapper{
+  .spacer{
+    padding-top: 133%;
+  }
+  .unit{
+    //max-width: 220px;
+    text-align: center;
+    margin: 1em auto;
+  }
+  article{
+    margin-top: 1em;
+  }
+  .unit-photo{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    margin-bottom: 2em;
+    &.founder{
+      background-image: url("../img/team/founder.jpg");
+    }
+    &.chief{
+      background-image: url("../img/team/chief.jpg");
+    }
+    &.assistant{
+      background-image: url("../img/team/assistant.jpg");
+    }
+  }
+  .unit-name{
+    font-size: 1.5em;
+  }
+  .unit-position{
+    color: #adadad;
+  }
+  .aboute-assistant{
+    max-width: 470px;
+  }
+  .clear-unit{
+    background-color: #adadad;
+  }
+  .unit-photo, .clear-unit{
+    border: 1px solid #e2e2e2;
+  }
+}
