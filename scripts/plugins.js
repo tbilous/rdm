@@ -25,6 +25,25 @@
 // Place any jQuery/helper plugins in here.
 
 $(document).ready(function () {
+//CALENDAR
+    var eventData = [
+        {"date": "2015-10-01", "badge": false, "title": "Example 1"},
+        {"date": "2015-10-02", "badge": true, "title": "Example 2"}
+    ];
+    $(document).ready(function () {
+        $("#my-calendar").zabuto_calendar({
+            language: "ua",
+            cell_border: false,
+            today: true,
+            weekstartson: 1,
+            show_days: true,
+            nav_icon: {
+                prev: '<span class="glyphicon glyphicon-menu-left"></span>',
+                next: '<span class="glyphicon glyphicon-menu-right"></span>'
+            },
+            data: eventData
+        });
+    });
 //BOOTSTRAP HOVER DROPDOWN-MENU
     $('ul.nav li.dropdown').hover(function () {
         $(this).find('.dropdown-menu').stop(true, true).delay(100).fadeIn(200);
