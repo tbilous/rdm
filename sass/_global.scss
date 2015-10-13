@@ -6,7 +6,7 @@
 
 $button-blue: #53b3cd;
 $button-blue-hover: darken($button-blue, 5%);
-
+$blue-brand: #448ccb;
 $white: #ffffff;
 $holiday-color: #ff7979;
 $week-days-color: #46b7c7;
@@ -81,7 +81,7 @@ input, textarea, button, .btn, .form-control {
 }
 
 .blue-brand {
-  color: #448ccb;
+  color: $blue-brand;
 }
 
 .button-brand-blue {
@@ -98,6 +98,22 @@ input, textarea, button, .btn, .form-control {
   margin: 0;
   li {
     display: inline-block;
+  }
+}
+.list-no-padding{
+  padding-left: 0;
+}
+.list-blue-dot{
+  list-style: none;
+  li::before{
+    content: "";
+    line-height: 1em;
+    width: .5em;
+    height: .5em;
+    background-color: $blue-brand;
+    float: left;
+    margin: .35em 0.35em 0;
+    border-radius: 50%;
   }
 }
 
@@ -206,5 +222,14 @@ input, textarea, button, .btn, .form-control {
   }
   li::before{
     display: none;
+  }
+}
+
+//DEFAULT PAGE
+.default-page{
+  main{
+    article:nth-of-type(1){
+      margin-top: 1em;
+    }
   }
 }
