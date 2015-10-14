@@ -18,6 +18,6 @@
   ],
   "dependencies": {
     "Readmore.js": "readmore#~2.0.5",
-    "bootstrap-star-rating": "readmore#~2.0.5"
+    "bootstrap-star-rating": "~3.5.4"
   }
 }
