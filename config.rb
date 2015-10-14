@@ -10,4 +10,4 @@ javascripts_dir = "scripts"
 sourcemap     = true
 output_style  = :compressed
 sass_options  = { cache: false }
-line_comments = true
+line_comments = false

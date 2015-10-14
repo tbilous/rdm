@@ -1,0 +1,23 @@
+{
+  "name": "rdm",
+  "version": "0.0.1",
+  "homepage": "https://github.com/tbilous/rdm",
+  "authors": [
+    "Taras Bilous <tbilous@yahoo.com>"
+  ],
+  "main": "index.html",
+  "description": "Frontend part",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "addons"
+  ],
+  "dependencies": {
+    "Readmore.js": "readmore#~2.0.5",
+    "bootstrap-star-rating": "readmore#~2.0.5"
+  }
+}

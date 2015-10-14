@@ -1,0 +1,23 @@
+{
+  "name": "rdm",
+  "version": "0.0.1",
+  "description": "FrontEnd part",
+  "main": "index.js",
+  "dependencies": {
+    "uglify-js": "^2.5.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tbilous/rdm.git"
+  },
+  "author": "Taras Bilous (tbilous@yahoo.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tbilous/rdm/issues"
+  },
+  "homepage": "https://github.com/tbilous/rdm"
+}

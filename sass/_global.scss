@@ -227,6 +227,12 @@ input, textarea, button, .btn, .form-control {
     display: none;
   }
 }
+//COLLAPSED TEXT
+.colllapsed-link{
+  small{
+    font-size: 70%;
+  }
+}
 
 //DEFAULT PAGE
 .default-page{
@@ -234,5 +240,20 @@ input, textarea, button, .btn, .form-control {
     article:nth-of-type(1){
       margin-top: 1em;
     }
+  }
+}
+
+//NEWS DATE
+.news-date{
+  margin-top: 1em;
+  color: #8c9dac;
+  .month:after{
+    content: ',';
+  }
+  .month:before{
+    content: ' ';
+  }
+  .year:before{
+    content: ' ';
   }
 }
