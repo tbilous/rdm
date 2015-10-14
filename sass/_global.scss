@@ -18,6 +18,16 @@ $color_steel_blue_approx: #53b3cd;
 $color_california_approx: #ff9b08;
 $color_mountain_mist_approx: #999999;
 
+//STICKY FOOTER
+$footer-height: 33em;
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: $footer-height;
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -25,7 +35,7 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 33em;
+  margin-bottom: $footer-height;
   @media screen and (max-width: $screen-desktop) {
     font-size: 12px;
   }
@@ -38,14 +48,7 @@ body {
 
 }
 
-//STICKY FOOTER
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 33em;
-}
+
 
 input, a, button, textarea, .btn {
   &:focus,
@@ -63,21 +66,21 @@ input, textarea, button, .btn, .form-control {
   }
 }
 
-.color-black {
-  color: black;
-}
 
 .relative {
   position: relative;
 }
 
-//FONT WEIGHT
+//TYPES
 .light {
   font-weight: 300;
 }
 
 .bold {
   font-weight: 700;
+}
+.color-black {
+  color: black;
 }
 
 .blue-brand {
@@ -117,7 +120,7 @@ input, textarea, button, .btn, .form-control {
   }
 }
 
-// RESPONSIVE BLOCK SPACER
+// RESPONSIVE MEDIA-BLOCK SPACER
 .spacer {
   font-size: 0;
   height: 0;
