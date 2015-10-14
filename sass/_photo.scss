@@ -3,7 +3,7 @@
   @media (max-width: $screen-tablet) {
    font-size: 10px;
   }
-  .photo-item,
+
   .nav-photo li{
     width: 24.9%;
     font-size: $font-size-base;
@@ -14,7 +14,7 @@
       width: 24%;
     }
   }
-  .photo-item {
+/*  .photo-item {
     background-color: lightgray;
     float: none;
     position: relative;
@@ -25,7 +25,7 @@
     &:nth-last-of-type(1) {
       margin-bottom: 0;
     }
-  }
+  }*/
   .nav-photo {
     margin-top: 2em;
     margin-bottom: 4em;
@@ -52,21 +52,13 @@
     }
   }
 
-  /* SINGLE COL */
-  @media (max-width: 600px) {
-    .project-item {
-      width: 100%;
-      margin-bottom: 5%;
-    }
-  }
-
-  .photo-item {
+/*  .photo-item {
     -webkit-box-shadow: 0 0 0 1px $gray-lighter;
     -moz-box-shadow: 0 0 0 1px $gray-lighter;
     box-shadow: 0 0 0 1px $gray-lighter;
     .spacer {
       padding-top: 66.5%;
     }
-  }
+  }*/
 
 }

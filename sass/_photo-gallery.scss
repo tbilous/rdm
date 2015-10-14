@@ -1,0 +1,38 @@
+//MODULE PHOTO GALLERY
+.photo-block {
+  .photo-item {
+    width: 24.9%;
+    margin-right: 1px;
+    vertical-align: top;
+    margin-bottom: 1px;
+    float: none;
+    position: relative;
+    cursor: pointer;
+    background-size: 100%;
+    background-color: lightgray;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-box-shadow: 0 0 0 1px $gray-lighter;
+    -moz-box-shadow: 0 0 0 1px $gray-lighter;
+    box-shadow: 0 0 0 1px $gray-lighter;
+    @media (max-width: $screen-lg-min) {
+      width: 24.5%;
+    }
+    @media (max-width: $screen-sm-max) {
+      width: 24%;
+    }
+    &:nth-last-of-type(1) {
+      margin-bottom: 0;
+    }
+    &.photo4x3 {
+      .spacer {
+        padding-top: 66.5%;
+      }
+    }
+    &.photo3x4 {
+      .spacer {
+        padding-top: 135%;
+      }
+    }
+  }
+}
