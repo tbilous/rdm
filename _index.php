@@ -87,7 +87,18 @@
             <!--LEFT ASIDE-->
             <div class="col-lg-2 visible-lg">
                 <aside class="left-aside" id="left-menu">
-                    <?php include 'aside-left.php' ?>
+                    <div class="block-1">
+                        <h4 class="aside-heading">Відео</h4>
+
+                        <div class="embed-responsive embed-responsive-16by9">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+                        </div>
+                    </div>
+                    <div class="block-2">
+                        <div class="embed-responsive embed-responsive-4by3">
+                            <iframe class="embed-responsive-item" src="//www.youtube.com/embed/ePbKGoIGAXY"></iframe>
+                        </div>
+                    </div>
                 </aside>
             </div>
             <!--CONTENT BLOCK-->
@@ -215,7 +226,58 @@
             <!--RIGHT ASIDE-->
             <div class="col-sm-4 col-md-3 col-lg-2  hidden-xs">
                 <aside class="right-aside" id="right-menu">
-                    <?php include 'aside-right.php' ?>
+                    <div class="block-1">
+                        <h4 class="aside-heading">Наші проекти</h4>
+                        <ul class="list-unstyled block-btn-group">
+                            <li>
+                                <a href="photo.html" class="btn btn-lg btn-primary">
+                                    Фото
+                                </a>
+                            </li>
+                            <li>
+                                <a href="video.html" class="btn btn-lg btn-primary">
+                                    Відео
+                                </a>
+                            </li>
+                        </ul>
+
+
+                    </div>
+                    <div class="block-2">
+                        <h4 class="aside-heading">Інфо-медіа</h4>
+                        <ul class="list-unstyled block-btn-group">
+                            <li>
+                                <a href="javascript:void(0)" class="btn btn-lg btn-primary">
+                                    Новини
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void(0)" class="btn btn-lg btn-primary">
+                                    Ми і ЗМІ
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="block-3">
+                        <h4 class="aside-heading">Цитати</h4>
+
+                        <p class="aside-article">
+                            "Не відкладайте добрих справ!<br/>
+                            Нелегка доля випала Україні у XXI столітті. Вир суспільно-політичного життя захопив і
+                            поглинув кожного. Ми, живучи у світі технологій маніпуляцій та амбіцій, забуваємо про
+                            головне – живемо один раз. <br/>
+                            Інколи важко зробити крок вперед, не маючи проблем з опорно-руховим апаратом, почути музику,
+                            маючи абсолютний слух, відчути тепло, маючи родину.<br/>
+                            А як бути тим, хто не має таких звичних на перший погляд можливостей?<br/>
+                            Єдине, що лишається у особливих людей – ВІРА.<br/>
+                            Не будьмо байдужими. Одна добра справа для тебе – дрібничка, а для когось – мрія, цілий
+                            світ…<br/>
+                            Зробімо перший крок РАЗОМ! Разом до МАЙБУТНЬОГО!"<br/>
+                            <br/>
+                            <strong>Максим Шкіль, 2012 рік</strong>
+
+                        </p>
+                    </div>
                 </aside>
             </div>
         </div>
@@ -223,7 +285,70 @@
 </div>
 
 <!--FOOTER-->
-<?php include 'footer.php' ?>
+<footer class="footer">
+    <div class="footer-body">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <div class="search-footer">
+                        <div class="heading search-heading ">Пошук</div>
+                        <div class="input-group search-form-group">
+                            <input type="text" class="form-control search-input" placeholder="Пошук...">
+                            <span class="input-group-btn">
+                            <button class="btn btn-secondary search-button button-brand-blue" type="button"></button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="calendar-footer">
+                        <div class="heading calendar-heading ">Календар</div>
+                        <div id="my-calendar">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="contacts-footer visible-lg visible-md visible-sm">
+                        <div class="heading contact-heading ">Контакти</div>
+                        <ul class="list-unstyled bottom-contacts">
+                            <li class="bottom-social icon-address">м. Житомир, вул. Київська, 3</li>
+                            <li class="bottom-social icon-phone">
+                                <div>+38 (0412)-46-83-02</div>
+                                <div>+380991720505</div>
+                            </li>
+                            <li class="bottom-social icon-fax">+380960008585</li>
+                            <li class="bottom-social icon-mail">razom.dm@gmail.com</li>
+                            <li class="bottom-social icon-site">dm.in.ua</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-4 hidden-xs">
+                        <p>Copyright &copy; 2015 - All Rights Reserved</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 text-center">
+                        <a href="#home" class="button-up btn">
+                            <span class="glyphicon glyphicon-menu-up"></span>
+
+                            <div>Вверх</div>
+                        </a>
+                    </div>
+                    <div class="col-sm-4 hidden-xs">
+                        <ul class="list text-right">
+                            <li><a class="top-social sprite-fb" href="javascript:void(0)"></a>
+                            <li><a class="top-social sprite-tw" href="javascript:void(0)"></a>
+                            <li><a class="top-social sprite-in" href="javascript:void(0)"></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
