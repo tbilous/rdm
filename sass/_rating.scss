@@ -18,7 +18,7 @@ $url_0: url('../img/loading.gif');
 //@extend-elements
 //original selectors
 //.star-rating .clear-rating, .star-rating-rtl .clear-rating
-%extend_1 {
+%extend_star_1 {
   color: $color_silver_chalice_approx;
   cursor: not-allowed;
   display: inline-block;
@@ -28,7 +28,7 @@ $url_0: url('../img/loading.gif');
 
 //original selectors
 //.star-rating .caption, .star-rating-rtl .caption
-%extend_2 {
+%extend_star_2 {
   color: $color_mountain_mist_approx;
   display: inline-block;
   vertical-align: middle;
@@ -150,20 +150,20 @@ $url_0: url('../img/loading.gif');
 }
 .star-rating {
   .clear-rating {
-    @extend %extend_1;
+    @extend %extend_star_1;
     padding-right: 5px;
   }
   .caption {
-    @extend %extend_2;
+    @extend %extend_star_2;
     padding-left: 5px;
   }
 }
 .star-rating-rtl {
   .clear-rating {
-    @extend %extend_1;
+    @extend %extend_star_1;
   }
   .caption {
-    @extend %extend_2;
+    @extend %extend_star_2;
     padding-right: 5px;
   }
 }

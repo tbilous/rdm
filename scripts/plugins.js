@@ -53,7 +53,7 @@ $(document).ready(function () {
         $(this).removeClass('active');
     });
 //ACTIVATE PARENT DROPDOWN HREF
-    $('.navbar .dropdown > a').click(function(){
+    $('.navbar .dropdown > a').click(function () {
         location.href = this.href;
     });
 //DEFEND IFRAME FROM MOUSE WILL
@@ -71,15 +71,17 @@ $(document).ready(function () {
             $('.map iframe').css("pointer-events", "auto");
         });
     }
+
     //SET MASTER HEIGHT FOR SLAVE
     function master() {
         var masterHeight = $('.nav-video-wrapper').height();
-        $(window).on('resize', function(){
+        $(window).on('resize', function () {
             var masterHeight = $('.nav-video-wrapper').height();
-            $('.slave').css('height', masterHeight+'px');
+            $('.slave').css('height', masterHeight + 'px');
         });
-        $('.slave').css('height', masterHeight+'px');
+        $('.slave').css('height', masterHeight + 'px');
     }
+
     master();
     window.onresize = master();
 
@@ -90,9 +92,10 @@ $(document).ready(function () {
             $(this).css('backgroundImage', 'url(http://img.youtube.com/vi/' + videoID + '/0.jpg)')
         });
     }
+
     window.onload = thumbsBg;
 
-    $('.video-start').click(function(){
+    $('.video-start').click(function () {
         var videoID = $(this).data('video');
         $(".video-content-wrapper iframe.slave").remove();
         $('<iframe  class="slave" allowfullscreen></iframe>')
@@ -102,11 +105,11 @@ $(document).ready(function () {
     });
 
 //COLLAPSED ARTICLE
-    $('.collapsed-text').readmore({
+/*    $('.collapsed-text').readmore({
         collapsedHeight: 190,
         speed: 500,
         moreLink: '<a class="blue-brand colllapsed-link" href="#">Розгорнути <small><span class="glyphicon glyphicon-menu-right"></span></small></a>',
         lessLink: '<a class="blue-brand colllapsed-link" href="#">Згорнути <small><span class="glyphicon glyphicon-menu-right"></span></small></a>'
 
-    });
+    });*/
 });
