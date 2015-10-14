@@ -4,7 +4,7 @@
   "description": "FrontEnd part",
   "main": "index.js",
   "dependencies": {
-    "uglify-js": "^2.5.0"
+    "yuicompressor": "^2.4.8"
   },
   "devDependencies": {},
   "scripts": {
