@@ -1,8 +1,12 @@
 //MODULE PHOTO GALLERY
+
 .photo-block {
+  font-size: 1px;
   .photo-item {
-    width: 24.9%;
-    margin-right: 1px;
+    //4-items on row
+    //width: 24.9%;
+    width: 25%;
+    //margin-right: 1px;
     vertical-align: top;
     margin-bottom: 1px;
     float: none;
@@ -15,11 +19,33 @@
     -webkit-box-shadow: 0 0 0 1px $gray-lighter;
     -moz-box-shadow: 0 0 0 1px $gray-lighter;
     box-shadow: 0 0 0 1px $gray-lighter;
-    @media (max-width: $screen-lg-min) {
+    font-size: $font-size-base;
+/*    @media (max-width: $screen-lg-min) {
       width: 24.5%;
     }
     @media (max-width: $screen-sm-max) {
       width: 24%;
+    }*/
+    @media screen and (max-width: $screen-desktop) {
+      font-size: 12px;
+    }
+    @media screen and (max-width: $screen-tablet) {
+      font-size: 10px;
+    }
+    @media screen and (max-width: $screen-phone) {
+      font-size: 9px;
+    }
+
+    //3-items on row
+    &.x3{
+      margin-right: 0;
+      width: 33%;
+/*      @media (max-width: $screen-lg-min) {
+        width: 32.8%;
+      }
+      @media (max-width: $screen-sm-max) {
+        width: 32.5%;
+      }*/
     }
     &:nth-last-of-type(1) {
       margin-bottom: 0;
@@ -34,5 +60,9 @@
         padding-top: 135%;
       }
     }
+  }
+  .self-img{
+    background-position: center;
+    background-size: cover;
   }
 }

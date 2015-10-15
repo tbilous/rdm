@@ -22,7 +22,17 @@
     }
 }());
 
-// Place any jQuery/helper plugins in here.
+//SET BACKGROUND IMG
+
+function selfImg() {
+    $(".self-img").each(function () {
+        var imgUrl = $(this).data('img');
+        console.log(imgUrl);
+        $(this).css('backgroundImage', imgUrl)
+    });
+}
+window.onload = selfImg();
+
 
 $(document).ready(function () {
 //CALENDAR
@@ -105,10 +115,11 @@ $(document).ready(function () {
     });
 
 //COLLAPSED ARTICLE
-    $('.collapsed-text').readmore({
+/*    $('.collapsed-text').readmore({
         collapsedHeight: 190,
         speed: 500,
         moreLink: '<a class="blue-brand colllapsed-link" href="#">Розгорнути <small><span class="glyphicon glyphicon-menu-right"></span></small></a>',
         lessLink: '<a class="blue-brand colllapsed-link" href="#">Згорнути <small><span class="glyphicon glyphicon-menu-right"></span></small></a>'
-    });
+    });*/
+
 });
