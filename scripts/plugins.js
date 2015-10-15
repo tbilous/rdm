@@ -105,11 +105,10 @@ $(document).ready(function () {
     });
 
 //COLLAPSED ARTICLE
-/*    $('.collapsed-text').readmore({
+    $('.collapsed-text').readmore({
         collapsedHeight: 190,
         speed: 500,
         moreLink: '<a class="blue-brand colllapsed-link" href="#">Розгорнути <small><span class="glyphicon glyphicon-menu-right"></span></small></a>',
         lessLink: '<a class="blue-brand colllapsed-link" href="#">Згорнути <small><span class="glyphicon glyphicon-menu-right"></span></small></a>'
-
-    });*/
+    });
 });
